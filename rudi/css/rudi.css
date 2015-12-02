@@ -1,0 +1,521 @@
+/*
+ACEITLab Rudi CSS
+
+@author  Michael White-Webster
+@version 0.7.4
+@access  private
+*/
+
+.active {
+    background-color: #ADA;
+}
+
+.inactive {
+    background-color: #DDD;
+}
+
+.success {
+    background-color: #ADA;
+}
+
+.fail {
+    background-color: #DAA;
+}
+
+.selected {
+    background-color: #ADA;
+}
+
+#div_published_stamp {
+    height: 100%;
+    /*position: relative;*/
+    z-index: 10;
+    overflow-x: hidden;
+}
+
+#stamp_text {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    transform: translate(0, -50%) rotate(-20deg);
+    opacity: 0.5;
+    pointer-events: none;
+    overflow: hidden;
+    text-align: center;
+    color: darkred;
+    font-size: 15vw;
+}
+
+body,
+div.element_column,
+div.element_column_right,
+div.element_column_center,
+#site_title,
+#menu_bar_lab_quota,
+#menu_bar_group_labs_title,
+#menu_bar_student_labs_title,
+#menu_bar_my_labs_title,
+#active_lab_age_title,
+div.element .title,
+button {
+    background-color: #8872BC;
+}
+
+.clickable:hover {
+    cursor: pointer;
+}
+
+html, body, div, form, fieldset, table, tr, td, p, img, pre, iframe {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html {
+    /*font-size: 75%;*/
+}
+
+html, button, textarea, input, select, option {
+    /*font-family: "Comic Sans MS", cursive, sans-serif;*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /*background-color: #DDD;*/
+    height: 100%;
+    width: 100%;
+}
+
+.page {
+    height:100%;
+    width:100%;
+}
+
+table {
+    border-spacing: 0 2px;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+td {
+    padding: 0 2px;
+}
+
+input, textarea, select, option {
+    /*border-radius: 4px;*/
+}
+
+button {
+    background-color: lightblue;
+    /*border-radius: 5px;*/
+    border: 0;
+    height: 20px;
+    min-width: 20px;
+    /*color: white;*/
+    /*border-radius: 3px;*/
+    /*background-color: #FFF;*/
+}
+
+button:disabled, button .inactive {
+    background-color: #DDD;
+    /*border-radius: 5px;*/
+    color: white;
+    border: 0;
+}
+
+button:hover {
+    background-color: cornflowerblue;
+}
+
+button[disabled]:hover {
+    background-color: #DDD;
+}
+
+div.header {
+    width: 100%;
+    height: 45px;
+}
+
+div.section {
+    width: 100%;
+    height: auto;
+}
+
+#section_header {
+    background-color: white;
+}
+
+div.header_left {
+    float: left;
+    height: 100%;
+}
+
+div.header_right {
+    float: right;
+    height: 100%;
+}
+
+div.header_center {
+
+}
+
+#home_link_title {
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+#user_name_title {
+    color: teal;
+    float: right;
+    margin: 0 0 0 5px;
+}
+
+#logout_title {
+    color: black;
+    float: right;
+    margin: 0 0 0 5px;
+}
+
+#lab_title {
+    float: right;
+    margin: 0;
+    text-align: center;
+}
+
+div.menu_bar {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#menu_bar {
+    background-color: white;
+}
+
+div.clear {
+    clear: both
+}
+
+div.horizontal_divider {
+    height: 5px;
+    /*margin: 5px 0 5px 0;*/
+    margin: 0;
+    width: auto;
+    background-color: #777;
+}
+
+div.main {
+
+}
+
+div.message_bar {
+    width: 100%;
+}
+
+#summary_section {
+
+}
+
+#vm_section {
+
+}
+
+#status_section {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+div.section_title {
+
+}
+
+div.column {
+    float: left;
+    display: inline;
+    width: 200px;
+    margin: 10px;
+}
+
+div.column table {
+    width: 100%;
+}
+
+div.column th.column_label {
+    text-align: left;
+}
+
+div.column th.column_title {
+    text-align: center;
+}
+
+div.main_column {
+    float: left;
+    display: inline;
+}
+
+div.main_column .column_element {
+    border: 1px solid;
+    /*border-radius: 5px;*/
+    border-radius: 0;
+    margin: 2px;
+    /*background-color: white;*/
+    /*border-right: 1px solid;*/
+    /*border-bottom: 1px solid;*/
+}
+
+div.element_table {
+    width: 100%;
+    float: left;
+    display: inline;
+    /*border-radius: 15px;*/
+    border-radius: 0;
+}
+
+div.element_column {
+    float: left;
+    display: inline;
+    border: 0 solid;
+    /*border-radius: 10px;*/
+    border-radius: 0;
+    margin: 5px 5px 5px 5px;
+    /*background-color: #0072BC;*/
+    /*background-color: black;*/
+}
+
+div.element_column_right {
+    float: right;
+    display: inline;
+    border: 0 solid;
+    /*border-radius: 10px;*/
+    border-radius: 0;
+    margin: 5px 5px 5px 5px;
+    /*background-color: #0072BC;*/
+    /*background-color: black;*/
+}
+
+div.element_column_center {
+    float: left;
+    display: inline;
+    border: 0 solid;
+    /*border-radius: 10px;*/
+    border-radius: 0;
+    margin: 5px auto 5px auto;
+    /*background-color: #0072BC;*/
+    /*background-color: black;*/
+}
+
+div.element {
+    margin: 5px;
+    border: 0 solid;
+    /*border-radius: 5px;*/
+    border-radius: 0;
+    padding: 2px;
+    background-color: #FFF;
+    overflow-x: hidden;
+}
+
+#site_title {
+    color: white;
+    /*background-color: #0072BC;*/
+    /*background-color: black;*/
+    font-weight: bold;
+    text-align: center;
+    padding: 3px 40px 3px;
+}
+
+div.row_element {
+    float: left;
+    display: inline;
+    margin: 5px;
+    border: 0 solid;
+    /*border-radius: 5px;*/
+    border-radius: 0;
+    padding: 2px;
+    background-color: #FFF;
+}
+
+div.row_element_right {
+    float: right;
+    display: inline;
+    margin: 5px;
+    border: 0 solid;
+    /*border-radius: 5px;*/
+    border-radius: 0;
+    padding: 2px;
+    background-color: #EEF;
+}
+
+#create_new_lab_button {
+    /*margin-top: 12px;*/
+}
+
+#menu_bar_lab_quota {
+    /*margin-top: 15px;*/
+    /*background-color: #0072BC;*/
+    /*background-color: black;*/
+    color: white;
+}
+
+#menu_bar_group_labs_title {
+    /*margin-top: 15px;*/
+    /*background-color: #0072BC;*/
+    /*background-color: black;*/
+    color: white;
+}
+
+#menu_bar_student_labs_title {
+    color: white;
+}
+
+#menu_bar_my_labs_title {
+    /*margin-top: 15px;*/
+    /*background-color: #0072BC;*/
+    /*background-color: black;*/
+    color: white;
+}
+
+#active_lab_age_title {
+    /*background-color: #0072BC;*/
+    /*background-color: black;*/
+    color: white;
+}
+
+p.row_element_text {
+    float: left;
+    display: inline;
+    border: 0 solid;
+    /*border-radius: 5px;*/
+    border-radius: 0;
+    margin: 5px;
+    background-color: white;
+}
+
+div.vm {
+    width: 240px;
+}
+
+div.element table {
+    width: 100%;
+}
+
+div.element .label {
+    text-align: center;
+}
+
+div.element .title {
+    color: white;
+    /*background-color: #0072BC;*/
+    /*background-color: black;*/
+    font-weight: bold;
+    text-align: center;
+    padding: 3px 40px 3px;
+}
+
+div.vm_thumbnail_container {
+    width: 180px;
+    height: 135px;
+    padding: 10px;
+    /*border-radius: 5px;*/
+    border-radius: 0;
+}
+
+div.vm_thumbnail {
+    width: 180px;
+    height: 135px;
+    /*margin: 10px;*/
+    background-color: black;
+    color: white;
+    text-align: left;
+    /*vertical-align: middle;*/
+}
+
+div.lab_active_button_indicator {
+    width: 100%;
+    height: 5px;
+    margin-top: 2px;
+    /*border-bottom-left-radius: 3px;*/
+    /*border-bottom-right-radius: 3px;*/
+}
+
+div.vm_active_indicator {
+    width: 100%;
+    /*border-radius: 5px;*/
+    border-radius: 0;
+    /*height: 10px;*/
+    /*margin-bottom: 2px;*/
+}
+
+form.bar_form {
+    margin: 0;
+}
+
+form.column_form {
+    margin: 0;
+}
+
+form.column_form .new_button {
+    float: right;
+}
+
+div.column p.column_title {
+    height: auto;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+div.column_console_container {
+    width: 180px;
+    height: 135px;
+    padding: 10px;
+    /*background-color: gray;*/
+}
+
+div.column_console {
+    width: 180px;
+    height: 130px;
+    /*margin: 10px;*/
+    background-color: black;
+    color: white;
+    text-align: left;
+    /*vertical-align: middle;*/
+}
+
+div.column_info {
+    height: auto;
+    background-color: white;
+}
+
+div.vnc_console {
+    position: absolute;
+    top: 130px;
+    bottom: 0;
+    width: 100%;
+    /*height: 768px;*/
+    float: left;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#vm_vnc_frame {
+    border: none;
+    width: 640px;
+    height: 480px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#manage_form_frame {
+    /*border: none;*/
+    width: 100%;
+    max-height: 80%;
+}

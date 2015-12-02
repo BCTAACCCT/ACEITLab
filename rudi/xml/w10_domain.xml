@@ -1,0 +1,34 @@
+<domain type='kvm'>
+        <name></name>
+        <memory unit=''></memory>
+        <vcpu>1</vcpu>
+        <os>
+                <type arch='' machine='pc'>hvm</type>
+                <boot dev='cdrom'/>
+                <boot dev='hd'/>
+        </os>
+        <features>
+                <acpi/>
+                <apic/>
+                <pae/>
+        </features>
+	<cpu mode='custom' match='exact'>
+		<model fallback='allow'>core2duo</model>
+		<vendor>Intel</vendor>
+		<topology sockets='1' cores='2' threads='1'/>
+		<feature policy='disable' name='lahf_lm'/>
+	</cpu>
+        <clock offset='utc'/>
+        <on_poweroff>destroy</on_poweroff>
+        <on_reboot>restart</on_reboot>
+        <on_crash>destroy</on_crash>
+        <devices>
+		<input type='tablet' bus='usb'>
+			<alias name='input0'/>
+		</input>
+                <graphics type='vnc' autoport='yes'>
+                        <listen type='network' network='0-net-private'/>
+                </graphics>
+        </devices>
+</domain>
+

@@ -1,0 +1,54 @@
+<?php
+/**
+ * ACEITLab Guacamole Functions
+ *
+ * functions for links to the Guacamole project
+ * to provide access to remote consoles of vm on remote hosts
+ * takes calls from main application
+ *
+ * @author  Michael White-Webster
+ * @version 0.7.3
+ * @access  private
+ */
+
+/**
+ * generates a guacamole remote console url
+ *
+ * @param   string $base_url base of url
+ * @param   string $conn_id  guacamole connection id
+ * @param   string $protocol "SSH" | "VNC" | "RDP"
+ * @param   string $hostname host name
+ * @param   int    $port     port number
+ * @param   string $secret   guacamole secret phrase
+ *
+ * @return string
+ */
+function guacamole_url($base_url, $conn_id, $protocol, $hostname, $port, $secret)
+{
+
+    /* Define Variables from User Inputs */
+    $guacamole_base_url = $base_url;
+    $guacamole_conn_id = $conn_id;
+    $guacamole_protocol = $protocol;
+    $guacamole_hostname = $hostname;
+    $guacamole_port = $port;
+    $guacamole_secret = $secret;
+
+    /* Set Timestamp in Milliseconds */
+    $timestamp = time() * 1000;
+
+    /* Create Signature (Checksum) using Concatenated Variables */
+    $signature_concatenate = $timestamp . $guacamole_protocol . 'hostname' . $guacamole_hostname . 'port' . $guacamole_port;
+
+    /* Encode Signature (Checksum) using Secret (Salt) */
+    $signature_encode = base64_encode(hash_hmac('sha1', $signature_concatenate, $guacamole_secret, 1));
+
+    /* Create URL String with Concatenated Key Pair Variables */
+    $guacamole_url = $guacamole_base_url . '?id=c/' . $guacamole_conn_id . '&guac.protocol=' . $guacamole_protocol . '&guac.hostname=' . $guacamole_hostname . '&guac.port=' . $guacamole_port . '&amp;timestamp=' . $timestamp . '&signature=' . $signature_encode;
+
+    /* Return URL String to User */
+    return $guacamole_url;
+
+}
+
+?>

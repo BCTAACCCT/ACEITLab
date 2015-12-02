@@ -1,0 +1,186 @@
+<?php
+/**
+ * ACEITLab Output Functions
+ *
+ * processes and formats textual and other display objects into usable HTML components
+ * takes calls from Application API
+ *
+ * @author  Michael White-Webster
+ * @version 0.7.4
+ * @access  private
+ */
+
+/**
+ * reformat text (XML) as a HTML <textarea> element
+ *
+ * @param   string $text content to be formatted
+ *
+ * @return  string                      a HTML textarea element
+ */
+function ace_out_text_as_html_xml($text)
+{
+    $str = '<textarea cols="100" rows="20">' . $text . '</textarea><br/>';
+    return $str;
+}
+
+/**
+ * reformat array as a HTML <table> element
+ *
+ * @param   array $array content to be formatted
+ *
+ * @return  string                      a HTML table element
+ */
+function ace_out_array_as_html_table($array)
+{
+    if (count($array) > 0) {
+        $str = '<table border="1">';
+        $keys = array_keys($array);
+        if ((gettype($keys[0]) == 'string') || (gettype($keys[1]) == 'string')) {
+            $str .= '<tr>';
+            foreach ($array as $key => $value) {
+                $str .= '<th>' . $key . '</th>';
+            }
+            $str .= '</tr>';
+        }
+        $str .= '<tr>';
+        foreach ($array as $key => $value) {
+            $str .= '<td>' . $value . '</td>';
+        }
+        $str .= '</tr></table>';
+    } else {
+        $str = 'cannot output';
+    }
+    return $str;
+}
+
+/**
+ * reformat array as HTML text
+ *
+ * @param   array $array content to be formatted
+ *
+ * @return  string                      text with field and HTML line delimiters
+ */
+function ace_out_array_as_html_record($array)
+{
+    $str = '';
+    $count = count($array); #number of fields in record
+    if ($count > 0) {
+        foreach ($array as $key => $value) {
+            $str .= $key . ' : ' . $value . '<br/>';
+        }
+    }
+    return $str;
+}
+
+/**
+ * reformat array as HTML text
+ *
+ * @param   array $array content to be formatted
+ *
+ * @return  string                      text with HTML line delimiters
+ */
+function ace_out_array_as_html_list($array)
+{
+    $str = '';
+    $count = count($array);
+    if ($count > 0) {
+        for ($element = 0; $element < $count; $element++) {
+            $str .= $array[ $element ] . '<br/>';
+        }
+    }
+    return $str;
+}
+
+/**
+ * reformat array as a HTML table
+ *
+ * @param   array $table content to be formatted
+ *
+ * @return  string                      a HTML table element
+ */
+function ace_out_table_as_html_table($table)
+{
+    $str = '';
+    $row_count = count($table);
+    if ($row_count > 0) {
+        $str .= '<table border="1">';
+        $column_names = array_keys($table[0]);
+        if ((gettype($column_names[0]) == 'string') || (gettype($column_names[1]) == 'string')) {
+            $str .= '<tr>';
+            foreach ($table[0] as $column_name => $value) {
+                $str .= '<th>' . $column_name . '</th>';
+            }
+            $str .= '</tr>';
+        }
+        for ($row = 0; $row < $row_count; $row++) {
+            $str .= '<tr>';
+            foreach ($table[ $row ] as $column_name => $value) {
+                $str .= '<td>' . $value . '</td>';
+            }
+            $str .= '</tr>';
+        }
+        $str .= '</table>';
+    }
+    return $str;
+}
+
+/**
+ * reformat table column as a list
+ *
+ * @param   array $table  data table
+ * @param   int   $column table column number
+ *
+ * @return  string                      text with HTML line delimiters
+ */
+function ace_out_table_column_as_html_list($table, $column)
+{
+    $str = '';
+    $row_count = count($table);
+    if ($row_count > 0) {
+        for ($row = 0; $row < $row_count; $row++) {
+            $str .= $table[ $row ][ $column ] . '<br/>';
+        }
+    }
+    return $str;
+}
+
+/**
+ * reformat messages array as HTML paragraph element
+ *
+ * @param   array $messages message data
+ *
+ * @return  string                      a HTML paragraph element
+ */
+function ace_out_messages($messages)
+{
+    $str = '';
+    foreach ($messages as $message) {
+        $str .= '<p class="' . (($message['status']) ? 'success' : 'fail') . '">';
+        $str .= ($message['status']) ? 'Success' : 'Fail';
+        $str .= ' : ';
+        $str .= $message['comment'];
+        $str .= '</p>';
+    }
+    return $str;
+}
+
+/**
+ * produce HTML meta tag that redirects to a specified URL
+ *
+ * @param   string $url URL of page to redirect to
+ */
+function ace_out_redirect_page($url)
+{
+    echo '<html>
+	<head>
+		<title>ACEITLab</title>
+		<meta http-equiv="Refresh" content="0.1; URL=' . $url . '" />
+	</head>
+	<body>
+	</body>
+</html>
+';
+    exit();
+}
+
+

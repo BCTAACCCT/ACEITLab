@@ -1,0 +1,3735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>API Documentation</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <link href="../css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/prism.css" rel="stylesheet" media="all"/>
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.js"></script>
+    <script src="../js/prism.min.js"></script>
+    <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
+        <script type="text/javascript">
+        function loadExternalCodeSnippets() {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach(function (pre) {
+                var src = pre.getAttribute('data-src');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist or is empty';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        $(document).ready(function(){
+            loadExternalCodeSnippets();
+        });
+        $('#source-view').on('shown', function () {
+            loadExternalCodeSnippets();
+        })
+    </script>
+
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="icon-ellipsis-vertical"></i>
+            </a>
+            <a class="brand" href="../index.html">API Documentation</a>
+
+            <div class="nav-collapse">
+                <ul class="nav pull-right">
+                                        <li class="dropdown" id="charts-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Charts <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../graphs/class.html">
+                                    <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="reports-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Reports <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../reports/errors.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">528</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/markers.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">10</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/deprecated.html">
+                                                                                                            <i class="icon-list-alt"></i>&#160;Deprecated <span class="label label-info pull-right">0</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<div class="go_to_top">-->
+    <!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
+    <!--</div>-->
+</div>
+
+<div id="___" class="container-fluid">
+        <section class="row-fluid">
+        <div class="span2 sidebar">
+                                <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
+            </div>
+            <div id="namespace-223119777" class="accordion-body collapse in">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </section>
+    <section class="row-fluid">
+        <div class="span10 offset2">
+            <div class="row-fluid">
+                <div class="span8 content file">
+                    <nav>
+                                                                    </nav>
+
+                    <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal"><i class="icon-code"></i></a>
+                    <h1><small></small>fns_libvirt.php</h1>
+                    <p><em>ACEITLab KVM Functions</em></p>
+                    <p>performs remote virtualization tasks against KVM hosts
+takes calls from Hypervisor Abstractor Function (HAF)
+makes calls to the php-libvirt API</p>
+
+                    
+                    
+                                    </div>
+
+                <aside class="span4 detailsbar">
+                    <dl>
+                                                    <dt>Package</dt>
+                            <dd><div class="namespace-wrapper">\Default</div></dd>
+                        
+                        
+                    </dl>
+                    <h2>Tags</h2>
+                    <table class="table table-condensed">
+                                                    <tr>
+                                <th>
+                                    author
+                                </th>
+                                <td>
+                                                                            <p>Michael White-Webster</p>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <th>
+                                    version
+                                </th>
+                                <td>
+                                                                            
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <th>
+                                    access
+                                </th>
+                                <td>
+                                                                            <p>private</p>
+                                                                    </td>
+                            </tr>
+                                            </table>
+
+                </aside>
+            </div>
+
+                        <div class="row-fluid">
+                <section class="span8 content file">
+                    <h2>Constants</h2>
+                </section>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant__LIBVIRT_LOG_FILE_" name="constant__LIBVIRT_LOG_FILE_" class="anchor"></a>
+            <article id="constant__LIBVIRT_LOG_FILE_" class="constant">
+                <h3 class="">_LIBVIRT_LOG_FILE_</h3>
+                <pre class="signature">_LIBVIRT_LOG_FILE_</pre>
+                <p><em>defines path to libvirt&#039;s local log file on the web server</em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                <dt>File</dt>
+                <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant__ACE_LIBVIRT_LOG_FILE_" name="constant__ACE_LIBVIRT_LOG_FILE_" class="anchor"></a>
+            <article id="constant__ACE_LIBVIRT_LOG_FILE_" class="constant">
+                <h3 class="">_ACE_LIBVIRT_LOG_FILE_</h3>
+                <pre class="signature">_ACE_LIBVIRT_LOG_FILE_</pre>
+                <p><em>defines path to aceitlab&#039;s log file for remote messages from libvirt on virt hosts</em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                <dt>File</dt>
+                <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant__IMAGE_POOL_" name="constant__IMAGE_POOL_" class="anchor"></a>
+            <article id="constant__IMAGE_POOL_" class="constant">
+                <h3 class="">_IMAGE_POOL_</h3>
+                <pre class="signature">_IMAGE_POOL_</pre>
+                <p><em>defines name given to libvirt storage pool for disk volumes</em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                <dt>File</dt>
+                <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant__MEDIA_POOL_" name="constant__MEDIA_POOL_" class="anchor"></a>
+            <article id="constant__MEDIA_POOL_" class="constant">
+                <h3 class="">_MEDIA_POOL_</h3>
+                <pre class="signature">_MEDIA_POOL_</pre>
+                <p><em>defines name given to libvirt storage pool for CD/DVD volumes</em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                <dt>File</dt>
+                <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant__DISCONNECTED_VIRT_NETWORK_ID_" name="constant__DISCONNECTED_VIRT_NETWORK_ID_" class="anchor"></a>
+            <article id="constant__DISCONNECTED_VIRT_NETWORK_ID_" class="constant">
+                <h3 class="">_DISCONNECTED_VIRT_NETWORK_ID_</h3>
+                <pre class="signature">_DISCONNECTED_VIRT_NETWORK_ID_</pre>
+                <p><em>defines name given to the inactive linux bridge on virt hosts for &quot;disconnected&quot; NICs workaround</em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                <dt>File</dt>
+                <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                            
+                        <div class="row-fluid">
+                <section class="span8 content file">
+                    <h2>Functions</h2>
+                </section>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_log_last_error" name="method_ace_kvm_log_last_error" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_log_last_error()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_log_last_error() </pre>
+                <p><em>write last libvirt error to log file</em></p>
+                
+
+                
+                
+                				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_connect" name="method_ace_kvm_connect" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_connect()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_connect(string  <span class="argument">$host_name</span>, string  <span class="argument">$host_domain</span>, string  <span class="argument">$host_username</span>, string  <span class="argument">$host_password</span>) : resource|boolean</pre>
+                <p><em>connect to a virt host</em></p>
+                <p>bit more info on a second line</p>
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$host_name </td>
+                                <td><p>name of virt host</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$host_domain </td>
+                                <td><p>domain of virt host</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$host_username </td>
+                                <td><p>username used to connect to virt host</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$host_password </td>
+                                <td><p>password of username account</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    resource|boolean
+                                            &mdash; <p>libvirt host connection resource or FALSE if connection attempt fails</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_host_is_connected" name="method_ace_kvm_host_is_connected" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_host_is_connected()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_host_is_connected(string  <span class="argument">$host_name</span>, string  <span class="argument">$host_domain</span>) : boolean</pre>
+                <p><em>determine if virt host is already connected</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$host_name </td>
+                                <td><p>name of virt host</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$host_domain </td>
+                                <td><p>domain of virt host</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>host is connected?</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn   libvirt host connection resource</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_get_log_file_tail" name="method_ace_kvm_get_log_file_tail" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_get_log_file_tail()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_get_log_file_tail(integer  <span class="argument">$num_lines</span>) : string</pre>
+                <p><em>fetch the last n lines from log file</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$num_lines </td>
+                                <td><p>number of lines to fetch from log file</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                            &mdash; <p>last n lines of the log file</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_get_hypervisor_info" name="method_ace_kvm_get_hypervisor_info" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_get_hypervisor_info()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_get_hypervisor_info() : string|boolean</pre>
+                <p><em>fetch live OS information about the remote virt host</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    string|boolean
+                                            &mdash; <p>hypervisor info or FALSE on error</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_get_physical_info" name="method_ace_kvm_get_physical_info" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_get_physical_info()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_get_physical_info() : string|boolean</pre>
+                <p><em>fetch live physical information about the remote virt host</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    string|boolean
+                                            &mdash; <p>physical host info or FALSE on error</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource @host_conn              libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_get_storagepool_list" name="method_ace_kvm_get_storagepool_list" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_get_storagepool_list()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_get_storagepool_list() </pre>
+                <p><em></em></p>
+                
+
+                
+                
+                				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_get_storage_info" name="method_ace_kvm_get_storage_info" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_get_storage_info()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_get_storage_info() </pre>
+                <p><em></em></p>
+                
+
+                
+                
+                				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_get_network_list" name="method_ace_kvm_get_network_list" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_get_network_list()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_get_network_list() : array|boolean</pre>
+                <p><em>fetch a list of network_virt_id from the virt host</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    array|boolean
+                                            &mdash; <p>network_virt_id list or FALSE on error</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_get_volume_list" name="method_ace_kvm_get_volume_list" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_get_volume_list()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_get_volume_list() : array|boolean</pre>
+                <p><em>fetch a list of volume_virt_id from the virt host in _IMAGE_POOL_</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    array|boolean
+                                            &mdash; <p>volume_virt_id list or FALSE on error</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_get_media_list" name="method_ace_kvm_get_media_list" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_get_media_list()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_get_media_list() : array|boolean</pre>
+                <p><em>fetch a list of volume_virt_id from the virt host in _MEDIA_POOL_</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    array|boolean
+                                            &mdash; <p>volume_virt_id list or FALSE on error</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_get_vm_list" name="method_ace_kvm_get_vm_list" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_get_vm_list()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_get_vm_list() : array|boolean</pre>
+                <p><em>fetch a list of vm_virt_id from the virt host</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    array|boolean
+                                            &mdash; <p>vm_virt_id list or FALSE on error</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_network_exists" name="method_ace_kvm_network_exists" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_network_exists()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_network_exists(string  <span class="argument">$network_virt_id</span>) : boolean</pre>
+                <p><em>determine if virtual network exists</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$network_virt_id </td>
+                                <td><p>virt_id of network</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>network exists?</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn       libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_get_network_state" name="method_ace_kvm_get_network_state" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_get_network_state()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_get_network_state(string  <span class="argument">$network_virt_id</span>) : integer|boolean</pre>
+                <p><em>determine active state of virtual network</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$network_virt_id </td>
+                                <td><p>virt_id of network</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    integer|boolean
+                                            &mdash; <p>0 = inactive, 1 = active, FALSE on error</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn       libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_set_network_state" name="method_ace_kvm_set_network_state" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_set_network_state()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_set_network_state(string  <span class="argument">$network_virt_id</span>, boolean  <span class="argument">$active</span>) : boolean</pre>
+                <p><em>set the state of a virtual network</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$network_virt_id </td>
+                                <td><p>virt_id of network</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>boolean</td>
+                                <td>$active </td>
+                                <td><p>TRUE = active, FALSE = inactive</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            todo
+                        </th>
+                        <td>
+                                                                                            <p>fix this since it doesn't work yet.</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn       libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_network_create" name="method_ace_kvm_network_create" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_network_create()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_network_create(string  <span class="argument">$host_name</span>, string  <span class="argument">$network_virt_id</span>) : boolean</pre>
+                <p><em>create and activate a virtual network</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$host_name </td>
+                                <td><p>name of virt host (only so we can pass to VIRSH)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$network_virt_id </td>
+                                <td><p>virt_id of network</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success TRUE/FALSE</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn       libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_network_delete" name="method_ace_kvm_network_delete" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_network_delete()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_network_delete(string  <span class="argument">$network_virt_id</span>) : boolean</pre>
+                <p><em>delete a virtual network</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$network_virt_id </td>
+                                <td><p>virt_id of network</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>TRUE on success, FALSE on error</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn       libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_network_activate_virsh" name="method_ace_kvm_network_activate_virsh" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_network_activate_virsh()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_network_activate_virsh(string  <span class="argument">$host_name</span>, string  <span class="argument">$network_virt_id</span>) : boolean</pre>
+                <p><em>activate a virtual network</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$host_name </td>
+                                <td><p>name of virt host (only so we can pass to VIRSH)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$network_virt_id </td>
+                                <td><p>virt_id of network</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>TRUE on success, FALSE on error</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            todo
+                        </th>
+                        <td>
+                                                                                            <p>use libvirt API function instead of VIRSH</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn       libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_network_deactivate_virsh" name="method_ace_kvm_network_deactivate_virsh" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_network_deactivate_virsh()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_network_deactivate_virsh(string  <span class="argument">$host_name</span>, string  <span class="argument">$network_virt_id</span>) : boolean</pre>
+                <p><em>deactivate a virtual network</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$host_name </td>
+                                <td><p>name of virt host (only so we can pass to VIRSH)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$network_virt_id </td>
+                                <td><p>virt_id of network</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>TRUE on success, FALSE on error</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            todo
+                        </th>
+                        <td>
+                                                                                            <p>use libvirt API function instead of VIRSH</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn       libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_pool_exists" name="method_ace_kvm_pool_exists" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_pool_exists()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_pool_exists(string  <span class="argument">$pool_virt_id</span>) : boolean</pre>
+                <p><em>determine if a storage pool exists on a virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$pool_virt_id </td>
+                                <td><p>virt_id of storage pool</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>storage pool exists?</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn    libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_volume_exists" name="method_ace_kvm_volume_exists" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_volume_exists()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_volume_exists(string  <span class="argument">$pool_virt_id</span>, string  <span class="argument">$volume_virt_id</span>) : boolean</pre>
+                <p><em>determine if a volume exists in a storage pool on a virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$pool_virt_id </td>
+                                <td><p>virt_id of storage pool</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$volume_virt_id </td>
+                                <td><p>virt_id of volume</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>volume exists in pool?</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn      libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_volume_create" name="method_ace_kvm_volume_create" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_volume_create()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_volume_create(string  <span class="argument">$volume_virt_id</span>, integer  <span class="argument">$size</span>, string  <span class="argument">$unit</span>, string  <span class="argument">$volume_base_virt_id</span>) : boolean</pre>
+                <p><em>create a volume in _IMAGE_POOL_ on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$volume_virt_id </td>
+                                <td><p>virt_id to be used for the volume</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$size </td>
+                                <td><p>size of volume measured in units</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$unit </td>
+                                <td><p>"MB" | "GB"</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$volume_base_virt_id </td>
+                                <td><p>virt_id of base volume</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>TRUE on success | FALSE on error</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn           libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_volume_delete" name="method_ace_kvm_volume_delete" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_volume_delete()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_volume_delete(string  <span class="argument">$volume_virt_id</span>) : boolean</pre>
+                <p><em>delete a volume in _IMAGE_POOL_ on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$volume_virt_id </td>
+                                <td><p>virt_id of the volume</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>TRUE on success | FALSE on error</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn      libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_create" name="method_ace_kvm_vm_create" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_create()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_create(string  <span class="argument">$vm_virt_id</span>, integer  <span class="argument">$vcpu</span>, integer  <span class="argument">$memory</span>, string  <span class="argument">$unit</span>, string  <span class="argument">$arch</span>,   <span class="argument">$profile</span>) : boolean</pre>
+                <p><em>create a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$vcpu </td>
+                                <td><p>number of vCPUs to assign</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$memory </td>
+                                <td><p>amount of RAM to assign measured in units</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$unit </td>
+                                <td><p>"KiB" | "MiB"</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$arch </td>
+                                <td><p>cpu arch (e.g. "x86_64")</p></td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$profile </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>TRUE on success | FALSE on error</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn  libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_delete" name="method_ace_kvm_vm_delete" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_delete()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_delete(string  <span class="argument">$vm_virt_id</span>) : boolean</pre>
+                <p><em>delete a virtual machine from the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>TRUE on success | FALSE on error</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn  libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_get_vm_state" name="method_ace_kvm_get_vm_state" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_get_vm_state()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_get_vm_state(string  <span class="argument">$vm_virt_id</span>) : integer|boolean</pre>
+                <p><em>determine active state of a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    integer|boolean
+                                            &mdash; <p>0 = inactive | 1 = active | FALSE on error</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn  libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_start" name="method_ace_kvm_vm_start" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_start()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_start(string  <span class="argument">$vm_virt_id</span>) : boolean</pre>
+                <p><em>start a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn  libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_match_nic_link_states_to_networks" name="method_ace_kvm_vm_match_nic_link_states_to_networks" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_match_nic_link_states_to_networks()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_match_nic_link_states_to_networks(string  <span class="argument">$vm_virt_id</span>) </pre>
+                <p><em>match a virtual machine&#039;s NIC link states to assign networks</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn  libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_stop" name="method_ace_kvm_vm_stop" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_stop()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_stop(string  <span class="argument">$vm_virt_id</span>) : boolean</pre>
+                <p><em>stop a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn  libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_suspend" name="method_ace_kvm_vm_suspend" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_suspend()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_suspend(string  <span class="argument">$vm_virt_id</span>) : boolean</pre>
+                <p><em>suspend a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn  libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_resume" name="method_ace_kvm_vm_resume" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_resume()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_resume(string  <span class="argument">$vm_virt_id</span>) : boolean</pre>
+                <p><em>resume a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn  libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_shutdown" name="method_ace_kvm_vm_shutdown" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_shutdown()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_shutdown(string  <span class="argument">$vm_virt_id</span>) : boolean</pre>
+                <p><em>send ACPI shutdown command to a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn  libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_soft_reset" name="method_ace_kvm_vm_soft_reset" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_soft_reset()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_soft_reset(string  <span class="argument">$vm_virt_id</span>, string  <span class="argument">$virt_host_name</span>) : boolean</pre>
+                <p><em>soft reset a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$virt_host_name </td>
+                                <td><p>name of the virt host, for VIRSH</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            todo
+                        </th>
+                        <td>
+                                                                                            <p>use libvirt API instead of VIRSH</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn      libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_get_vm_config" name="method_ace_kvm_get_vm_config" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_get_vm_config()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_get_vm_config(string  <span class="argument">$vm_virt_id</span>) : string|boolean</pre>
+                <p><em>fetch XML config of a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string|boolean
+                                            &mdash; <p>XML | FALSE on error</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn  libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_get_console_info" name="method_ace_kvm_vm_get_console_info" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_get_console_info()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_get_console_info(string  <span class="argument">$vm_virt_id</span>) : array</pre>
+                <p><em>fetch console connection information for a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                            &mdash; <p>vm vnc console info</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_attach_cdrom" name="method_ace_kvm_vm_attach_cdrom" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_attach_cdrom()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_attach_cdrom(string  <span class="argument">$vm_virt_id</span>, integer  <span class="argument">$vm_cdrom_instance</span>) : boolean</pre>
+                <p><em>attach a cdrom device to a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$vm_cdrom_instance </td>
+                                <td><p>instance of device (used to determine device name)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn         libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_detach_cdrom" name="method_ace_kvm_vm_detach_cdrom" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_detach_cdrom()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_detach_cdrom(string  <span class="argument">$vm_virt_id</span>, integer  <span class="argument">$vm_cdrom_instance</span>) : boolean</pre>
+                <p><em>detach a cdrom device from a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$vm_cdrom_instance </td>
+                                <td><p>instance of device (used to determine device name)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn         libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_get_cdrom_array" name="method_ace_kvm_vm_get_cdrom_array" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_get_cdrom_array()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_get_cdrom_array(  <span class="argument">$vm_virt_id</span>) </pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$vm_virt_id </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_cdrom_insert_media" name="method_ace_kvm_vm_cdrom_insert_media" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_cdrom_insert_media()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_cdrom_insert_media(string  <span class="argument">$vm_virt_id</span>, integer  <span class="argument">$vm_cdrom_instance</span>, string  <span class="argument">$volume_virt_id</span>) : boolean</pre>
+                <p><em>associate a volume in _MEDIA_POOL_ with a cdrom device in a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$vm_cdrom_instance </td>
+                                <td><p>instance of device (used to determine device name)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$volume_virt_id </td>
+                                <td><p>virt id of the volume</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn         libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_cdrom_eject_media" name="method_ace_kvm_vm_cdrom_eject_media" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_cdrom_eject_media()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_cdrom_eject_media(string  <span class="argument">$vm_virt_id</span>, integer  <span class="argument">$vm_cdrom_instance</span>) : boolean</pre>
+                <p><em>un-associate a volume in _MEDIA_POOL_ from a cdrom device in a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$vm_cdrom_instance </td>
+                                <td><p>instance of device (used to determine device name)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn         libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_attach_disk" name="method_ace_kvm_vm_attach_disk" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_attach_disk()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_attach_disk(string  <span class="argument">$vm_virt_id</span>, integer  <span class="argument">$vm_disk_instance</span>, string  <span class="argument">$volume_virt_id</span>) : boolean</pre>
+                <p><em>attach a disk device with associated volume, to a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$vm_disk_instance </td>
+                                <td><p>instance of device (used to determine device name)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$volume_virt_id </td>
+                                <td><p>virt_id of volume</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn        libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_get_disk_array" name="method_ace_kvm_vm_get_disk_array" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_get_disk_array()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_get_disk_array(string  <span class="argument">$vm_virt_id</span>) : array</pre>
+                <p><em>fetch array of disk information from a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                            &mdash; <p>vm disk info</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource    $host_conn      libvirt_connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_detach_disk" name="method_ace_kvm_vm_detach_disk" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_detach_disk()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_detach_disk(string  <span class="argument">$vm_virt_id</span>, integer  <span class="argument">$vm_disk_instance</span>) : boolean</pre>
+                <p><em>detach a disk device from a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$vm_disk_instance </td>
+                                <td><p>instance of device (used to determine device name)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn        libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_attach_nic_virsh" name="method_ace_kvm_vm_attach_nic_virsh" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_attach_nic_virsh()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_attach_nic_virsh(string  <span class="argument">$host_name</span>, string  <span class="argument">$vm_virt_id</span>, string  <span class="argument">$vm_nic_mac_address</span>) : boolean</pre>
+                <p><em>attach NIC device to a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$host_name </td>
+                                <td><p>virt_id host to pass to virsh</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_nic_mac_address </td>
+                                <td><p>mac address of NIC</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            todo
+                        </th>
+                        <td>
+                                                                                            <p>use libvirt API instead of VIRSH</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_attach_nic" name="method_ace_kvm_vm_attach_nic" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_attach_nic()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_attach_nic(string  <span class="argument">$vm_virt_id</span>, string  <span class="argument">$vm_nic_mac_address</span>) : boolean</pre>
+                <p><em>attach NIC device to a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_nic_mac_address </td>
+                                <td><p>mac address of NIC</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            todo
+                        </th>
+                        <td>
+                                                                                            <p>FIX THIS, so we can use it instead of VIRSH</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn          libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_get_nic_array" name="method_ace_kvm_vm_get_nic_array" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_get_nic_array()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_get_nic_array(string  <span class="argument">$vm_virt_id</span>) : array</pre>
+                <p><em>fetch array of NIC information from a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                            &mdash; <p>vm nic info</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn  libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_nic_get_link_state" name="method_ace_kvm_vm_nic_get_link_state" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_nic_get_link_state()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_nic_get_link_state(string  <span class="argument">$vm_virt_id</span>, string  <span class="argument">$vm_nic_mac_address</span>) : boolean</pre>
+                <p><em>fetch the link state for a NIC in a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_nic_mac_address </td>
+                                <td><p>mac address of the NIC</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>link state</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_get_nic_network_by_mac" name="method_ace_kvm_vm_get_nic_network_by_mac" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_get_nic_network_by_mac()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_get_nic_network_by_mac(string  <span class="argument">$vm_virt_id</span>, string  <span class="argument">$vm_nic_mac_address</span>) : NULL|string</pre>
+                <p><em>fetch the network virt_id associated with a NIC in a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_nic_mac_address </td>
+                                <td><p>mac address of the NIC</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    NULL|string
+                                            &mdash; <p>NULL | name of network</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_nic_link_up" name="method_ace_kvm_vm_nic_link_up" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_nic_link_up()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_nic_link_up(string  <span class="argument">$vm_virt_id</span>, string  <span class="argument">$vm_nic_mac_address</span>) : boolean</pre>
+                <p><em>set link state UP of a NIC in a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_nic_mac_address </td>
+                                <td><p>mac address of the NIC</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn          libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_nic_link_down" name="method_ace_kvm_vm_nic_link_down" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_nic_link_down()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_nic_link_down(string  <span class="argument">$vm_virt_id</span>, string  <span class="argument">$vm_nic_mac_address</span>) : boolean</pre>
+                <p><em>set link state DOWN of a NIC in a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_nic_mac_address </td>
+                                <td><p>mac address of the NIC</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn          libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_detach_nic_virsh" name="method_ace_kvm_vm_detach_nic_virsh" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_detach_nic_virsh()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_detach_nic_virsh(string  <span class="argument">$host_name</span>, string  <span class="argument">$vm_virt_id</span>, string  <span class="argument">$vm_nic_mac_address</span>) : boolean</pre>
+                <p><em>detach a NIC device from a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$host_name </td>
+                                <td><p>virt_id of host (to pass to virsh)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_nic_mac_address </td>
+                                <td><p>mac address of the NIC</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            todo
+                        </th>
+                        <td>
+                                                                                            <p>use libvirt API instead of VIRSH</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_detach_nic" name="method_ace_kvm_vm_detach_nic" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_detach_nic()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_detach_nic(string  <span class="argument">$vm_virt_id</span>, string  <span class="argument">$vm_nic_mac_address</span>) : boolean</pre>
+                <p><em>detach a NIC device from a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_nic_mac_address </td>
+                                <td><p>mac address of the NIC</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            todo
+                        </th>
+                        <td>
+                                                                                            <p>FIX THIS so we can use it instead of VIRSH</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn          libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_nic_connect_network" name="method_ace_kvm_vm_nic_connect_network" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_nic_connect_network()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_nic_connect_network(string  <span class="argument">$host_name</span>, string  <span class="argument">$vm_virt_id</span>, integer  <span class="argument">$vm_nic_instance</span>, string  <span class="argument">$vm_nic_mac_address</span>, string  <span class="argument">$new_network_virt_id</span>) : boolean</pre>
+                <p><em>connect a NIC to a network in a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$host_name </td>
+                                <td><p>virt_id of host (to pass to virsh for activation only)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$vm_nic_instance </td>
+                                <td><p>instance of NIC device</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_nic_mac_address </td>
+                                <td><p>mac address of the NIC</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$new_network_virt_id </td>
+                                <td><p>virt_id of network</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            todo
+                        </th>
+                        <td>
+                                                                                            <p>FIX the VIRSH portion of this function</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn           libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_screenshot" name="method_ace_kvm_vm_screenshot" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_screenshot()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_screenshot(string  <span class="argument">$vm_virt_id</span>, string  <span class="argument">$virt_host_name</span>, integer  <span class="argument">$max_width</span>) : string</pre>
+                <p><em>fetch and store a screenshot of an active virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$virt_host_name </td>
+                                <td><p>virt_id of host</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$max_width </td>
+                                <td><p>width of screenshot (height determined by ratio)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                            &mdash; <p>filename of JPG</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn      libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_get_snapshot_list" name="method_ace_kvm_vm_get_snapshot_list" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_get_snapshot_list()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_get_snapshot_list(string  <span class="argument">$vm_virt_id</span>) : array</pre>
+                <p><em>fetch snapshot list of a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                            &mdash; <p>snapshot list</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn  libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_create_snapshot" name="method_ace_kvm_vm_create_snapshot" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_create_snapshot()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_create_snapshot(string  <span class="argument">$vm_virt_id</span>) : boolean</pre>
+                <p><em>create snapshot of a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn  libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_snapshot_revert" name="method_ace_kvm_vm_snapshot_revert" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_snapshot_revert()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_snapshot_revert(string  <span class="argument">$vm_virt_id</span>, integer  <span class="argument">$vm_snapshot_instance_to_revert_to</span>) : boolean</pre>
+                <p><em>revert to a snapshot of a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$vm_snapshot_instance_to_revert_to </td>
+                                <td><p>snapshot instance</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            todo
+                        </th>
+                        <td>
+                                                                                            <p>TIDY UP to remove bugged code</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn                         libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_snapshot_delete" name="method_ace_kvm_vm_snapshot_delete" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_snapshot_delete()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_snapshot_delete(string  <span class="argument">$vm_virt_id</span>, integer  <span class="argument">$vm_snapshot_instance</span>) : boolean</pre>
+                <p><em>delete a snapshot from a virtual machine on the virt host</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vm_virt_id </td>
+                                <td><p>virt_id of the vm</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$vm_snapshot_instance </td>
+                                <td><p>snapshot instance</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>on success</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            global
+                        </th>
+                        <td>
+                                                                                            <p>resource $host_conn            libvirt connection</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ace_kvm_vm_delete_snapshots" name="method_ace_kvm_vm_delete_snapshots" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">ace_kvm_vm_delete_snapshots()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ace_kvm_vm_delete_snapshots(  <span class="argument">$vm_virt_id</span>) </pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$vm_virt_id </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">fns_libvirt.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                            
+        </div>
+    </section>
+
+    <div id="source-view" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="source-view-label" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="source-view-label"></h3>
+        </div>
+        <div class="modal-body">
+            <pre data-src="../files/fns_libvirt.php.txt" class="language-php line-numbers"></pre>
+        </div>
+    </div>
+
+    <footer class="row-fluid">
+        <section class="span10 offset2">
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <section class="row-fluid footer-sections">
+                        <section class="span4">
+                                                        <h1><i class="icon-code"></i></h1>
+                            <div>
+                                <ul>
+                                                                    </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-bar-chart"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../graphs/class.html">Class Hierarchy Diagram</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-pushpin"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../reports/errors.html">Errors</a></li>
+                                    <li><a href="../reports/markers.html">Markers</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <hr />
+                    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
+                    on 
+Warning: date_default_timezone_get(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\php\pear\phpDocumentor\vendor\twig\twig\lib\Twig\Extension\Core.php on line 89
+November 25th, 2015 at 15:18.
+                </section>
+            </section>
+        </section>
+    </footer>
+</div>
+
+</body>
+</html>

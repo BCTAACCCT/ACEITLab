@@ -1,0 +1,5 @@
+<network>
+  <name>{netName}</name>
+  <bridge name="{netName}" />
+</network>
+

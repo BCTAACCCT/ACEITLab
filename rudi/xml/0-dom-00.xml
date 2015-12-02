@@ -1,0 +1,42 @@
+<domain type='kvm'>
+  <name>{domName}</name>
+  <memory unit='MiB'>512</memory>
+  <vcpu placement='static'>1</vcpu>
+  <os>
+    <type arch='x86_64' machine='pc'>hvm</type>
+    <boot dev='hd'/>
+  </os>
+  <features>
+    <acpi/>
+    <apic/>
+    <pae/>
+  </features>
+  <clock offset='utc'/>
+  <on_poweroff>destroy</on_poweroff>
+  <on_reboot>restart</on_reboot>
+  <on_crash>restart</on_crash>
+  <devices>
+    <disk type='volume' device='disk'>
+      <driver name='qemu' type='qcow2' cache='none'/>
+      <source pool='0-poo-images' volume='{domVol01}'/>
+      <target dev='vda' bus='virtio'/>
+    </disk>
+    <disk type='file' device='cdrom'>
+      <driver name='qemu' type='raw'/>
+      <target dev='hdc' bus='ide'/>
+      <readonly/>
+    </disk>
+    <interface type='network'>
+      <source network='0-net-public'/>
+      <model type='virtio'/>
+    </interface>
+    <interface type='network'>
+      <source network='{domNet01}'/>
+      <model type='virtio'/>
+    </interface>
+    <graphics type='vnc' autoport='yes'>
+      <listen type='network' network='0-net-private'/>
+    </graphics>
+  </devices>
+</domain>
+

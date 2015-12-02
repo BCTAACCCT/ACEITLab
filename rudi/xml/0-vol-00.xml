@@ -1,0 +1,25 @@
+<volume>
+  <name>{volName}</name>
+  <allocation>0</allocation>
+  <capacity unit="GiB">4</capacity>
+  <target>
+    <path>/storage/vol02/images/</path>
+    <format type='qcow2'/>
+    <permissions>
+      <owner>107</owner>
+      <group>107</group>
+      <mode>0744</mode>
+    </permissions>
+  </target>
+  <backingStore>
+    <path>/storage/vol02/images/0-vol-rtr</path>
+    <format type='qcow2'/>
+    <permissions>
+      <owner>107</owner>
+      <group>107</group>
+      <mode>0744</mode>
+      <label>virt_image_t</label>
+    </permissions>
+  </backingStore>
+</volume>
+

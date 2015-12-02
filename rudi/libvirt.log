@@ -1,0 +1,1587 @@
+PHP Notice:  Undefined offset: 1 in /var/www/html/ace_test/ace_fns_mysql.php on line 53
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/ace_test/ace_cron.php:0
+PHP   2. ace_get_labs() /var/www/html/ace_test/ace_cron.php:21
+PHP   3. ace_db_get_lab_table() /var/www/html/ace_test/ace_fns.php:270
+PHP   4. ace_db_query() /var/www/html/ace_test/ace_fns_mysql.php:267
+[2015-09-16 16:37:23 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-16 16:37:23 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-16 16:37:23 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh03/system established, returning 0x7fc8523bebd0
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-03', returning 0x7fc85190f9d0
+[2015-09-16 16:37:24 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85190f9d0 (conn 0x7fc8523bebd0) is allocated
+[2015-09-16 16:37:24 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85190f9d0) completed successfully
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-00', returning 0x7fc85190fa10
+[2015-09-16 16:37:24 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85190fa10 (conn 0x7fc8523bebd0) is allocated
+[2015-09-16 16:37:24 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85190fa10) completed successfully
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-01', returning 0x7fc852299650
+[2015-09-16 16:37:24 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852299650 (conn 0x7fc8523bebd0) is allocated
+[2015-09-16 16:37:24 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852299650) completed successfully
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-02', returning 0x7fc8521f9710
+[2015-09-16 16:37:24 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8521f9710 (conn 0x7fc8523bebd0) is allocated
+[2015-09-16 16:37:24 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8521f9710) completed successfully
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-03', returning 0x7fc8521f9710
+[2015-09-16 16:37:24 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8521f9710 (conn 0x7fc8523bebd0) is allocated
+[2015-09-16 16:37:24 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8521f9710) completed successfully
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-00', returning 0x7fc85245eff0
+[2015-09-16 16:37:24 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85245eff0 (conn 0x7fc8523bebd0) is allocated
+[2015-09-16 16:37:24 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85245eff0) completed successfully
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-01', returning 0x7fc8518842e0
+[2015-09-16 16:37:24 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8518842e0 (conn 0x7fc8523bebd0) is allocated
+[2015-09-16 16:37:24 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8518842e0) completed successfully
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-02', returning 0x7fc8521b61f0
+[2015-09-16 16:37:24 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8521b61f0 (conn 0x7fc8523bebd0) is allocated
+[2015-09-16 16:37:24 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8521b61f0) completed successfully
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-03', returning 0x7fc851615630
+[2015-09-16 16:37:24 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851615630 (conn 0x7fc8523bebd0) is allocated
+[2015-09-16 16:37:24 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851615630) completed successfully
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-01', returning 0x7fc8522933e0
+[2015-09-16 16:37:24 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8522933e0 (conn 0x7fc8523bebd0) is allocated
+[2015-09-16 16:37:24 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8522933e0) completed successfully
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-02', returning 0x7fc8524d4a50
+[2015-09-16 16:37:24 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8524d4a50 (conn 0x7fc8523bebd0) is allocated
+[2015-09-16 16:37:24 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8524d4a50) completed successfully
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-03', returning 0x7fc852548e80
+[2015-09-16 16:37:24 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852548e80 (conn 0x7fc8523bebd0) is allocated
+[2015-09-16 16:37:24 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852548e80) completed successfully
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-01', returning 0x7fc851555600
+[2015-09-16 16:37:24 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851555600 (conn 0x7fc8523bebd0) is allocated
+[2015-09-16 16:37:24 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851555600) completed successfully
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-01', returning 0x7fc852554be0
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc852554be0, 0) returned 2
+[2015-09-16 16:37:24 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852554be0 (conn 0x7fc8523bebd0) is allocated
+[2015-09-16 16:37:24 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852554be0) completed successfully
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-02', returning 0x7fc851642780
+[2015-09-16 16:37:24 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851642780 (conn 0x7fc8523bebd0) is allocated
+[2015-09-16 16:37:24 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851642780) completed successfully
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-02', returning 0x7fc8521f9710
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc8521f9710, 0) returned 2
+[2015-09-16 16:37:24 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8521f9710 (conn 0x7fc8523bebd0) is allocated
+[2015-09-16 16:37:24 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8521f9710) completed successfully
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-03', returning 0x7fc8524e15d0
+[2015-09-16 16:37:24 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8524e15d0 (conn 0x7fc8523bebd0) is allocated
+[2015-09-16 16:37:24 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8524e15d0) completed successfully
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-03', returning 0x7fc8522db9c0
+[2015-09-16 16:37:24 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc8522db9c0, 0) returned 1
+[2015-09-16 16:37:24 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8522db9c0 (conn 0x7fc8523bebd0) is allocated
+[2015-09-16 16:37:24 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8522db9c0) completed successfully
+[2015-09-16 16:37:24 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc8523bebd0) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh02/system established, returning 0x7fc85161e6b0
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-02', returning 0x7fc851910920
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851910920 (conn 0x7fc85161e6b0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851910920) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-00', returning 0x7fc852548940
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852548940 (conn 0x7fc85161e6b0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852548940) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-01', returning 0x7fc8524cf030
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8524cf030 (conn 0x7fc85161e6b0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8524cf030) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-02', returning 0x7fc85233d2a0
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85233d2a0 (conn 0x7fc85161e6b0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85233d2a0) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-00', returning 0x7fc8524cef20
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8524cef20 (conn 0x7fc85161e6b0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8524cef20) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh03/system established, returning 0x7fc8524442f0
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-03', returning 0x7fc8516421f0
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-01', returning 0x7fc85233d120
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8516421f0 (conn 0x7fc8524442f0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8516421f0) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85233d120 (conn 0x7fc85161e6b0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85233d120) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-00', returning 0x7fc851642230
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851642230 (conn 0x7fc8524442f0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851642230) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-01', returning 0x7fc8523838b0
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8523838b0 (conn 0x7fc8524442f0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8523838b0) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-02', returning 0x7fc85240aac0
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-02', returning 0x7fc851644a80
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851644a80 (conn 0x7fc8524442f0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851644a80) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85240aac0 (conn 0x7fc85161e6b0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85240aac0) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-03', returning 0x7fc851644a80
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851644a80 (conn 0x7fc8524442f0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851644a80) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-00', returning 0x7fc85234b320
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-01', returning 0x7fc8525609a0
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85234b320 (conn 0x7fc8524442f0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85234b320) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8525609a0 (conn 0x7fc85161e6b0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8525609a0) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-01', returning 0x7fc8525574a0
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8525574a0 (conn 0x7fc8524442f0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8525574a0) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-02', returning 0x7fc8523835e0
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8523835e0 (conn 0x7fc8524442f0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8523835e0) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-02', returning 0x7fc851cbecc0
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-03', returning 0x7fc85226d2e0
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85226d2e0 (conn 0x7fc8524442f0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85226d2e0) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851cbecc0 (conn 0x7fc85161e6b0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851cbecc0) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-01', returning 0x7fc8522d1400
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8522d1400 (conn 0x7fc8524442f0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8522d1400) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-01', returning 0x7fc85226d1d0
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-02', returning 0x7fc85252f1a0
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85252f1a0 (conn 0x7fc8524442f0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85252f1a0) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85226d1d0 (conn 0x7fc85161e6b0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85226d1d0) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-03', returning 0x7fc851621ef0
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851621ef0 (conn 0x7fc8524442f0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851621ef0) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-01', returning 0x7fc85252e800
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85252e800 (conn 0x7fc8524442f0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85252e800) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-01', returning 0x7fc85240ae70
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc85240ae70, 0) returned 0
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-01', returning 0x7fc85223b7d0
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc85223b7d0, 0) returned 2
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85223b7d0 (conn 0x7fc8524442f0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85223b7d0) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85240ae70 (conn 0x7fc85161e6b0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85240ae70) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-02', returning 0x7fc8523008a0
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8523008a0 (conn 0x7fc8524442f0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8523008a0) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-01', returning 0x7fc851888d80
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc851888d80 (xPath = (null))
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-02', returning 0x7fc851644a80
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc851644a80, 0) returned 2
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851644a80 (conn 0x7fc8524442f0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851644a80) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851888d80 (conn 0x7fc85161e6b0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851888d80) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-03', returning 0x7fc85244f990
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85244f990 (conn 0x7fc8524442f0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85244f990) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00323-vm-03', returning 0x7fc8525af860
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-02', returning 0x7fc85232bdc0
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc8525af860, 0) returned 1
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8525af860 (conn 0x7fc8524442f0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8525af860) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85232bdc0 (conn 0x7fc85161e6b0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85232bdc0) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc8524442f0) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-02', returning 0x7fc852560ba0
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc852560ba0, 0) returned 1
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852560ba0 (conn 0x7fc85161e6b0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852560ba0) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-02', returning 0x7fc85232bd40
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc85232bd40 (xPath = (null))
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85232bd40 (conn 0x7fc85161e6b0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85232bd40) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-02', returning 0x7fc85224feb0
+[2015-09-16 16:37:26 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc85224feb0 (xPath = (null))
+[2015-09-16 16:37:26 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85224feb0 (conn 0x7fc85161e6b0) is allocated
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85224feb0) completed successfully
+[2015-09-16 16:37:26 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc85161e6b0) completed successfully
+[2015-09-17 11:48:53 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 11:48:53 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 11:48:53 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 11:48:53 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh02/system established, returning 0x7fc852418090
+[2015-09-17 11:48:54 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc852418090) completed successfully
+[2015-09-17 11:51:51 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 11:51:51 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 11:51:51 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 11:51:51 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh02/system established, returning 0x7fc85236ebb0
+[2015-09-17 11:51:51 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc85236ebb0) completed successfully
+[2015-09-17 12:04:58 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:04:58 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:04:58 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh02/system established, returning 0x7fc852342600
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_list_domains: Found 0 domains
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 0 domains
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 2 domains
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 2 domains
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00333-vm-01
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00333-vm-02
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_list_domains: Found 0 domains
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 0 domains
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 2 domains
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 2 domains
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00333-vm-01
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00333-vm-02
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-01', returning 0x7fc851880880
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_domain_destroy: virDomainDestroy(0x7fc851880880) returned -1
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-01', returning 0x7fc852498d70
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc852498d70 (xPath = (null))
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-01', returning 0x7fc8524ae7c0
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc8524ae7c0 (xPath = (null))
+[2015-09-17 12:04:59 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8524ae7c0 (conn 0x7fc852342600) is allocated
+[2015-09-17 12:04:59 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8524ae7c0) completed successfully
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-01', returning 0x7fc8525d3d70
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_domain_update_device: virDomainUpdateDeviceFlags(0x7fc8525d3d70) returned 0
+[2015-09-17 12:04:59 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8525d3d70 (conn 0x7fc852342600) is allocated
+[2015-09-17 12:04:59 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8525d3d70) completed successfully
+[2015-09-17 12:04:59 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852498d70 (conn 0x7fc852342600) is allocated
+[2015-09-17 12:04:59 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852498d70) completed successfully
+[2015-09-17 12:04:59 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851880880 (conn 0x7fc852342600) is allocated
+[2015-09-17 12:04:59 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851880880) completed successfully
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_list_domains: Found 0 domains
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 0 domains
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 2 domains
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 2 domains
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00333-vm-01
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00333-vm-02
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-02', returning 0x7fc8525d4070
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_domain_destroy: virDomainDestroy(0x7fc8525d4070) returned -1
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-02', returning 0x7fc852490220
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc852490220 (xPath = (null))
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-02', returning 0x7fc852366110
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc852366110 (xPath = (null))
+[2015-09-17 12:04:59 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852366110 (conn 0x7fc852342600) is allocated
+[2015-09-17 12:04:59 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852366110) completed successfully
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00333-vm-02', returning 0x7fc852366110
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_domain_update_device: virDomainUpdateDeviceFlags(0x7fc852366110) returned 0
+[2015-09-17 12:04:59 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852366110 (conn 0x7fc852342600) is allocated
+[2015-09-17 12:04:59 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852366110) completed successfully
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_network_get: returning 0x7fc8524901b0
+[2015-09-17 12:04:59 libvirt-php/core   ]: check_resource_allocation: libvirt network resource 0x7fc8524901b0 (conn 0x7fc852342600) is allocated
+[2015-09-17 12:04:59 libvirt-php/core   ]: php_libvirt_network_dtor: virNetworkFree(0x7fc8524901b0) completed successfully
+[2015-09-17 12:04:59 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852490220 (conn 0x7fc852342600) is allocated
+[2015-09-17 12:04:59 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852490220) completed successfully
+[2015-09-17 12:04:59 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8525d4070 (conn 0x7fc852342600) is allocated
+[2015-09-17 12:04:59 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8525d4070) completed successfully
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc852342600, 0-poo-images) returned 0x7fc852342830
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc852342830
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_storagevolume_lookup_by_name: virStorageVolLookupByName(0x7fc852342830, 00333-vol-00) returned (nil)
+[2015-09-17 12:04:59 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc852342830 (conn (nil)) is allocated
+[2015-09-17 12:04:59 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc852342830) completed successfully
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc852342600, 0-poo-images) returned 0x7fc8525d4120
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc8525d4120
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_storagevolume_lookup_by_name: virStorageVolLookupByName(0x7fc8525d4120, 00333-vol-01) returned (nil)
+[2015-09-17 12:04:59 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc8525d4120 (conn (nil)) is allocated
+[2015-09-17 12:04:59 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc8525d4120) completed successfully
+[2015-09-17 12:04:59 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:05:00 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:05:00 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:05:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:05:02 libvirt-php/core   ]: libvirt_network_get: returning 0x7fc85257c4d0
+[2015-09-17 12:05:02 libvirt-php/core   ]: check_resource_allocation: libvirt network resource 0x7fc85257c4d0 (conn 0x7fc852342600) is allocated
+[2015-09-17 12:05:02 libvirt-php/core   ]: php_libvirt_network_dtor: virNetworkFree(0x7fc85257c4d0) completed successfully
+[2015-09-17 12:05:02 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc852342600) completed successfully
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@sh02/system established, returning 0x7fc8522e0830
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_connect_get_hypervisor: virConnectGetType returned QEMU
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_node_get_info: virNodeGetInfo returned 0
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc8522e0830, 0-poo-images) returned 0x7fc85225c110
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc85225c110
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_storagepool_get_info: virStoragePoolGetInfo(0x7fc85225c110, <info>) returned 0
+[2015-09-17 12:05:35 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc85225c110 (conn (nil)) is allocated
+[2015-09-17 12:05:35 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc85225c110) completed successfully
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc8522e0830, 0-poo-images) returned 0x7fc852465f40
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc852465f40
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_storagepool_refresh: virStoragePoolRefresh(0x7fc852465f40, 0) returned 0
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolNumOfVolumes(0x7fc852465f40) returned 3
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolListVolumes(0x7fc852465f40,0x7fc8528ad548,3) returned 3
+[2015-09-17 12:05:35 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc852465f40 (conn (nil)) is allocated
+[2015-09-17 12:05:35 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc852465f40) completed successfully
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_list_domains: Found 2 domains
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 2 domains
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_list_domains: Found running domain 0-dom-www02 with ID = 4
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_list_domains: Found running domain 0-dom-sql02 with ID = 3
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 1 domains
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 1 domains
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 0-dom-www03
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:05:35 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh02/system established, returning 0x7fc85260a500
+[2015-09-17 12:05:36 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc8522e0830) completed successfully
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect_get_hypervisor: virConnectGetType returned QEMU
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_node_get_info: virNodeGetInfo returned 0
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc85260a500, 0-poo-images) returned 0x7fc8523d2820
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc8523d2820
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_get_info: virStoragePoolGetInfo(0x7fc8523d2820, <info>) returned 0
+[2015-09-17 12:05:36 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc8523d2820 (conn (nil)) is allocated
+[2015-09-17 12:05:36 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc8523d2820) completed successfully
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc85260a500, 0-poo-images) returned 0x7fc8521aa340
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc8521aa340
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_refresh: virStoragePoolRefresh(0x7fc8521aa340, 0) returned 0
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolNumOfVolumes(0x7fc8521aa340) returned 4
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolListVolumes(0x7fc8521aa340,0x7fc8528ae408,4) returned 4
+[2015-09-17 12:05:36 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc8521aa340 (conn (nil)) is allocated
+[2015-09-17 12:05:36 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc8521aa340) completed successfully
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_list_domains: Found 0 domains
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 0 domains
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 2 domains
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 2 domains
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00333-vm-01
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00333-vm-02
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh03/system established, returning 0x7fc85260a710
+[2015-09-17 12:05:36 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc85260a500) completed successfully
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect_get_hypervisor: virConnectGetType returned QEMU
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_node_get_info: virNodeGetInfo returned 0
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc85260a710, 0-poo-images) returned 0x7fc852343350
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc852343350
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_get_info: virStoragePoolGetInfo(0x7fc852343350, <info>) returned 0
+[2015-09-17 12:05:36 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc852343350 (conn (nil)) is allocated
+[2015-09-17 12:05:36 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc852343350) completed successfully
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc85260a710, 0-poo-images) returned 0x7fc852384790
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc852384790
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_refresh: virStoragePoolRefresh(0x7fc852384790, 0) returned 0
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolNumOfVolumes(0x7fc852384790) returned 5
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolListVolumes(0x7fc852384790,0x7fc85286c850,5) returned 5
+[2015-09-17 12:05:36 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc852384790 (conn (nil)) is allocated
+[2015-09-17 12:05:36 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc852384790) completed successfully
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_list_domains: Found 0 domains
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 0 domains
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 4 domains
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 4 domains
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00323-vm-01
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00323-vm-00
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00323-vm-03
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00323-vm-02
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh04/system established, returning 0x7fc8522e4fb0
+[2015-09-17 12:05:36 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc85260a710) completed successfully
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect_get_hypervisor: virConnectGetType returned QEMU
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh04.aceitlab.lan
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_node_get_info: virNodeGetInfo returned 0
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh04.aceitlab.lan
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc8522e4fb0, 0-poo-images) returned 0x7fc8524b2ed0
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc8524b2ed0
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_get_info: virStoragePoolGetInfo(0x7fc8524b2ed0, <info>) returned 0
+[2015-09-17 12:05:36 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc8524b2ed0 (conn (nil)) is allocated
+[2015-09-17 12:05:36 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc8524b2ed0) completed successfully
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh04.aceitlab.lan
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc8522e4fb0, 0-poo-images) returned 0x7fc852306ac0
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc852306ac0
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_refresh: virStoragePoolRefresh(0x7fc852306ac0, 0) returned 0
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolNumOfVolumes(0x7fc852306ac0) returned 4
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolListVolumes(0x7fc852306ac0,0x7fc8528ae2e0,4) returned 4
+[2015-09-17 12:05:36 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc852306ac0 (conn (nil)) is allocated
+[2015-09-17 12:05:36 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc852306ac0) completed successfully
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh04.aceitlab.lan
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh04.aceitlab.lan
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_list_domains: Found 0 domains
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 0 domains
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 0 domains
+[2015-09-17 12:05:36 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 0 domains
+[2015-09-17 12:05:36 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc8522e4fb0) completed successfully
+[2015-09-17 12:07:12 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:07:12 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:07:12 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@sh02/system established, returning 0x7fc8522044e0
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect_get_hypervisor: virConnectGetType returned QEMU
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_node_get_info: virNodeGetInfo returned 0
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc8522044e0, 0-poo-images) returned 0x7fc852235b70
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc852235b70
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_get_info: virStoragePoolGetInfo(0x7fc852235b70, <info>) returned 0
+[2015-09-17 12:07:13 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc852235b70 (conn (nil)) is allocated
+[2015-09-17 12:07:13 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc852235b70) completed successfully
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc8522044e0, 0-poo-images) returned 0x7fc852235dd0
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc852235dd0
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_refresh: virStoragePoolRefresh(0x7fc852235dd0, 0) returned 0
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolNumOfVolumes(0x7fc852235dd0) returned 3
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolListVolumes(0x7fc852235dd0,0x7fc8528ff200,3) returned 3
+[2015-09-17 12:07:13 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc852235dd0 (conn (nil)) is allocated
+[2015-09-17 12:07:13 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc852235dd0) completed successfully
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_list_domains: Found 2 domains
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 2 domains
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_list_domains: Found running domain 0-dom-www02 with ID = 4
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_list_domains: Found running domain 0-dom-sql02 with ID = 3
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 1 domains
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 1 domains
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 0-dom-www03
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh02/system established, returning 0x7fc85251d880
+[2015-09-17 12:07:13 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc8522044e0) completed successfully
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect_get_hypervisor: virConnectGetType returned QEMU
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_node_get_info: virNodeGetInfo returned 0
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc85251d880, 0-poo-images) returned 0x7fc8522f2e50
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc8522f2e50
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_get_info: virStoragePoolGetInfo(0x7fc8522f2e50, <info>) returned 0
+[2015-09-17 12:07:13 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc8522f2e50 (conn (nil)) is allocated
+[2015-09-17 12:07:13 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc8522f2e50) completed successfully
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc85251d880, 0-poo-images) returned 0x7fc85154adb0
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc85154adb0
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_refresh: virStoragePoolRefresh(0x7fc85154adb0, 0) returned 0
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolNumOfVolumes(0x7fc85154adb0) returned 4
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolListVolumes(0x7fc85154adb0,0x7fc85280edd0,4) returned 4
+[2015-09-17 12:07:13 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc85154adb0 (conn (nil)) is allocated
+[2015-09-17 12:07:13 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc85154adb0) completed successfully
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_list_domains: Found 0 domains
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 0 domains
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 0 domains
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 0 domains
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh03/system established, returning 0x7fc85251d9b0
+[2015-09-17 12:07:13 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc85251d880) completed successfully
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect_get_hypervisor: virConnectGetType returned QEMU
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_node_get_info: virNodeGetInfo returned 0
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc85251d9b0, 0-poo-images) returned 0x7fc8522f2c70
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc8522f2c70
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_get_info: virStoragePoolGetInfo(0x7fc8522f2c70, <info>) returned 0
+[2015-09-17 12:07:13 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc8522f2c70 (conn (nil)) is allocated
+[2015-09-17 12:07:13 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc8522f2c70) completed successfully
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc85251d9b0, 0-poo-images) returned 0x7fc852204810
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc852204810
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_refresh: virStoragePoolRefresh(0x7fc852204810, 0) returned 0
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolNumOfVolumes(0x7fc852204810) returned 5
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolListVolumes(0x7fc852204810,0x7fc8528e8e90,5) returned 5
+[2015-09-17 12:07:13 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc852204810 (conn (nil)) is allocated
+[2015-09-17 12:07:13 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc852204810) completed successfully
+[2015-09-17 12:07:13 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_list_domains: Found 0 domains
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 0 domains
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 4 domains
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 4 domains
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00323-vm-01
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00323-vm-00
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00323-vm-03
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00323-vm-02
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh04/system established, returning 0x7fc8522f2ec0
+[2015-09-17 12:07:14 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc85251d9b0) completed successfully
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_connect_get_hypervisor: virConnectGetType returned QEMU
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh04.aceitlab.lan
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_node_get_info: virNodeGetInfo returned 0
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh04.aceitlab.lan
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc8522f2ec0, 0-poo-images) returned 0x7fc8522049c0
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc8522049c0
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_storagepool_get_info: virStoragePoolGetInfo(0x7fc8522049c0, <info>) returned 0
+[2015-09-17 12:07:14 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc8522049c0 (conn (nil)) is allocated
+[2015-09-17 12:07:14 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc8522049c0) completed successfully
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh04.aceitlab.lan
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc8522f2ec0, 0-poo-images) returned 0x7fc852235a00
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc852235a00
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_storagepool_refresh: virStoragePoolRefresh(0x7fc852235a00, 0) returned 0
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolNumOfVolumes(0x7fc852235a00) returned 4
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolListVolumes(0x7fc852235a00,0x7fc8528fe580,4) returned 4
+[2015-09-17 12:07:14 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc852235a00 (conn (nil)) is allocated
+[2015-09-17 12:07:14 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc852235a00) completed successfully
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh04.aceitlab.lan
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh04.aceitlab.lan
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_list_domains: Found 0 domains
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 0 domains
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 0 domains
+[2015-09-17 12:07:14 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 0 domains
+[2015-09-17 12:07:14 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc8522f2ec0) completed successfully
+[2015-09-17 12:07:56 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:07:56 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:07:56 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:07:57 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh02/system established, returning 0x7fc852222cf0
+[2015-09-17 12:07:57 libvirt-php/core   ]: libvirt_network_define_xml: returning 0x7fc8523b4760
+[2015-09-17 12:07:59 libvirt-php/core   ]: check_resource_allocation: libvirt network resource 0x7fc8523b4760 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:07:59 libvirt-php/core   ]: php_libvirt_network_dtor: virNetworkFree(0x7fc8523b4760) completed successfully
+[2015-09-17 12:07:59 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:07:59 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:07:59 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc852222cf0, 0-poo-images) returned 0x7fc8522b8610
+[2015-09-17 12:07:59 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc8522b8610
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_storagevolume_create_xml: virStorageVolCreateXML(0x7fc8522b8610, <xml>, 0) returned 0x7fc851cd3970
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_storagevolume_create_xml: returning 0x7fc851cd3970
+[2015-09-17 12:08:00 libvirt-php/core   ]: check_resource_allocation: libvirt storage volume resource 0x7fc851cd3970 (conn (nil)) is allocated
+[2015-09-17 12:08:00 libvirt-php/core   ]: php_libvirt_volume_dtor: virStorageVolFree(0x7fc851cd3970) completed successfully
+[2015-09-17 12:08:00 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc8522b8610 (conn (nil)) is allocated
+[2015-09-17 12:08:00 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc8522b8610) completed successfully
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc852222cf0, 0-poo-images) returned 0x7fc852307150
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc852307150
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_storagevolume_create_xml: virStorageVolCreateXML(0x7fc852307150, <xml>, 0) returned 0x7fc8516409f0
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_storagevolume_create_xml: returning 0x7fc8516409f0
+[2015-09-17 12:08:00 libvirt-php/core   ]: check_resource_allocation: libvirt storage volume resource 0x7fc8516409f0 (conn (nil)) is allocated
+[2015-09-17 12:08:00 libvirt-php/core   ]: php_libvirt_volume_dtor: virStorageVolFree(0x7fc8516409f0) completed successfully
+[2015-09-17 12:08:00 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc852307150 (conn (nil)) is allocated
+[2015-09-17 12:08:00 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc852307150) completed successfully
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_domain_define_xml: returning 0x7fc85224f9e0
+[2015-09-17 12:08:00 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85224f9e0 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:00 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85224f9e0) completed successfully
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc8516283f0
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc85224fa50
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc85224fa50 (xPath = (null))
+[2015-09-17 12:08:00 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85224fa50 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:00 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85224fa50) completed successfully
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_domain_undefine: virDomainUndefine(0x7fc8516283f0) returned 0
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_domain_define_xml: returning 0x7fc85224fac0
+[2015-09-17 12:08:00 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8516283f0 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:00 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8516283f0) completed successfully
+[2015-09-17 12:08:00 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85224fac0 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:00 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85224fac0) completed successfully
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc8522aebc0
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc8522aebc0 (xPath = (null))
+[2015-09-17 12:08:00 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8522aebc0 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:00 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8522aebc0) completed successfully
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc8522aec70
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_domain_update_device: virDomainUpdateDeviceFlags(0x7fc8522aec70) returned 0
+[2015-09-17 12:08:00 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8522aec70 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:00 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8522aec70) completed successfully
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc852563290
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc85229c9c0
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc85229c9c0 (xPath = (null))
+[2015-09-17 12:08:00 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85229c9c0 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:00 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85229c9c0) completed successfully
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_network_get: returning 0x7fc85229c970
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_network_get: returning 0x7fc85229cce0
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_domain_update_device: virDomainUpdateDeviceFlags(0x7fc852563290) returned 0
+[2015-09-17 12:08:00 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852563290 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:00 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852563290) completed successfully
+[2015-09-17 12:08:00 libvirt-php/core   ]: check_resource_allocation: libvirt network resource 0x7fc85229c970 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:00 libvirt-php/core   ]: php_libvirt_network_dtor: virNetworkFree(0x7fc85229c970) completed successfully
+[2015-09-17 12:08:00 libvirt-php/core   ]: check_resource_allocation: libvirt network resource 0x7fc85229cce0 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:00 libvirt-php/core   ]: php_libvirt_network_dtor: virNetworkFree(0x7fc85229cce0) completed successfully
+[2015-09-17 12:08:00 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc852457db0
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc852457db0 (xPath = (null))
+[2015-09-17 12:08:01 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852457db0 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:01 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852457db0) completed successfully
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc8523304b0
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_domain_update_device: virDomainUpdateDeviceFlags(0x7fc8523304b0) returned 0
+[2015-09-17 12:08:01 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8523304b0 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:01 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8523304b0) completed successfully
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc85233d2e0
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc85224fe00
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc85224fe00 (xPath = (null))
+[2015-09-17 12:08:01 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85224fe00 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:01 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85224fe00) completed successfully
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_network_get: returning 0x7fc85224fd00
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_network_get: returning 0x7fc8521bc7a0
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_domain_update_device: virDomainUpdateDeviceFlags(0x7fc85233d2e0) returned 0
+[2015-09-17 12:08:01 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85233d2e0 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:01 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85233d2e0) completed successfully
+[2015-09-17 12:08:01 libvirt-php/core   ]: check_resource_allocation: libvirt network resource 0x7fc85224fd00 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:01 libvirt-php/core   ]: php_libvirt_network_dtor: virNetworkFree(0x7fc85224fd00) completed successfully
+[2015-09-17 12:08:01 libvirt-php/core   ]: check_resource_allocation: libvirt network resource 0x7fc8521bc7a0 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:01 libvirt-php/core   ]: php_libvirt_network_dtor: virNetworkFree(0x7fc8521bc7a0) completed successfully
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc85231bba0
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_domain_create: virDomainCreate(0x7fc85231bba0) returned 0
+[2015-09-17 12:08:01 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85231bba0 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:01 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85231bba0) completed successfully
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_domain_define_xml: returning 0x7fc85228bef0
+[2015-09-17 12:08:01 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85228bef0 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:01 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85228bef0) completed successfully
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc851cd39e0
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc852330220
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc852330220 (xPath = (null))
+[2015-09-17 12:08:01 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852330220 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:01 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852330220) completed successfully
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_domain_undefine: virDomainUndefine(0x7fc851cd39e0) returned 0
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_domain_define_xml: returning 0x7fc851621830
+[2015-09-17 12:08:01 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851621830 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:01 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851621830) completed successfully
+[2015-09-17 12:08:01 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851cd39e0 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:01 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851cd39e0) completed successfully
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_domain_define_xml: returning 0x7fc851547a20
+[2015-09-17 12:08:01 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851547a20 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:01 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851547a20) completed successfully
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_domain_define_xml: returning 0x7fc8516421d0
+[2015-09-17 12:08:01 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8516421d0 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:01 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8516421d0) completed successfully
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc851cd3c70
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc85233d2a0
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc85233d2a0 (xPath = (null))
+[2015-09-17 12:08:01 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85233d2a0 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:01 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85233d2a0) completed successfully
+[2015-09-17 12:08:01 libvirt-php/core   ]: libvirt_domain_undefine: virDomainUndefine(0x7fc851cd3c70) returned 0
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_domain_define_xml: returning 0x7fc8521aaae0
+[2015-09-17 12:08:02 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851cd3c70 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:02 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851cd3c70) completed successfully
+[2015-09-17 12:08:02 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8521aaae0 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:02 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8521aaae0) completed successfully
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc852208880
+[2015-09-17 12:08:02 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852208880 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:02 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852208880) completed successfully
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc8522b8370
+[2015-09-17 12:08:02 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8522b8370 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:02 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8522b8370) completed successfully
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc85221b340
+[2015-09-17 12:08:02 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85221b340 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:02 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85221b340) completed successfully
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc85161e290
+[2015-09-17 12:08:02 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85161e290 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:02 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85161e290) completed successfully
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc851cd3ea0
+[2015-09-17 12:08:02 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851cd3ea0 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:02 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851cd3ea0) completed successfully
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc85236ebd0
+[2015-09-17 12:08:02 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85236ebd0 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:02 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85236ebd0) completed successfully
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc85162e000
+[2015-09-17 12:08:02 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85162e000 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:02 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85162e000) completed successfully
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc8521bc880
+[2015-09-17 12:08:02 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8521bc880 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:02 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8521bc880) completed successfully
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc85161bb00
+[2015-09-17 12:08:02 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85161bb00 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:02 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85161bb00) completed successfully
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc8521bc960
+[2015-09-17 12:08:02 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8521bc960 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:02 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8521bc960) completed successfully
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc852513c20
+[2015-09-17 12:08:02 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852513c20 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:02 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852513c20) completed successfully
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc8522089d0
+[2015-09-17 12:08:02 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8522089d0 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:02 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8522089d0) completed successfully
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc85236edf0
+[2015-09-17 12:08:02 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85236edf0 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:02 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85236edf0) completed successfully
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc85236ef30
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc85236ef30, 0) returned 0
+[2015-09-17 12:08:02 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85236ef30 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:02 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85236ef30) completed successfully
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc852470b30
+[2015-09-17 12:08:02 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852470b30 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:02 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852470b30) completed successfully
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc851910c60
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc851910c60, 0) returned 0
+[2015-09-17 12:08:02 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851910c60 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:02 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851910c60) completed successfully
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc852470ad0
+[2015-09-17 12:08:02 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852470ad0 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:02 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852470ad0) completed successfully
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc852208850
+[2015-09-17 12:08:02 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc852208850, 0) returned 0
+[2015-09-17 12:08:02 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852208850 (conn 0x7fc852222cf0) is allocated
+[2015-09-17 12:08:02 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852208850) completed successfully
+[2015-09-17 12:08:02 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc852222cf0) completed successfully
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@sh02/system established, returning 0x7fc8521d3570
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect_get_hypervisor: virConnectGetType returned QEMU
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_node_get_info: virNodeGetInfo returned 0
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc8521d3570, 0-poo-images) returned 0x7fc85237d060
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc85237d060
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_storagepool_get_info: virStoragePoolGetInfo(0x7fc85237d060, <info>) returned 0
+[2015-09-17 12:08:08 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc85237d060 (conn (nil)) is allocated
+[2015-09-17 12:08:08 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc85237d060) completed successfully
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc8521d3570, 0-poo-images) returned 0x7fc8521aa760
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc8521aa760
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_storagepool_refresh: virStoragePoolRefresh(0x7fc8521aa760, 0) returned 0
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolNumOfVolumes(0x7fc8521aa760) returned 3
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolListVolumes(0x7fc8521aa760,0x7fc8528bf1f0,3) returned 3
+[2015-09-17 12:08:08 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc8521aa760 (conn (nil)) is allocated
+[2015-09-17 12:08:08 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc8521aa760) completed successfully
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_list_domains: Found 2 domains
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 2 domains
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_list_domains: Found running domain 0-dom-www02 with ID = 4
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_list_domains: Found running domain 0-dom-sql02 with ID = 3
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 1 domains
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 1 domains
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 0-dom-www03
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh02/system established, returning 0x7fc8523b17b0
+[2015-09-17 12:08:08 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc8521d3570) completed successfully
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect_get_hypervisor: virConnectGetType returned QEMU
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_node_get_info: virNodeGetInfo returned 0
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc8523b17b0, 0-poo-images) returned 0x7fc85237d260
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc85237d260
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_storagepool_get_info: virStoragePoolGetInfo(0x7fc85237d260, <info>) returned 0
+[2015-09-17 12:08:08 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc85237d260 (conn (nil)) is allocated
+[2015-09-17 12:08:08 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc85237d260) completed successfully
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc8523b17b0, 0-poo-images) returned 0x7fc851542e50
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc851542e50
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_storagepool_refresh: virStoragePoolRefresh(0x7fc851542e50, 0) returned 0
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolNumOfVolumes(0x7fc851542e50) returned 6
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolListVolumes(0x7fc851542e50,0x7fc8528fc190,6) returned 6
+[2015-09-17 12:08:08 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc851542e50 (conn (nil)) is allocated
+[2015-09-17 12:08:08 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc851542e50) completed successfully
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_list_domains: Found 1 domains
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 1 domains
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_list_domains: Found running domain 00336-vm-00 with ID = 158
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00336-vm-03
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00336-vm-02
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00336-vm-01
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:08:08 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh03/system established, returning 0x7fc852508f20
+[2015-09-17 12:08:09 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc8523b17b0) completed successfully
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_connect_get_hypervisor: virConnectGetType returned QEMU
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_node_get_info: virNodeGetInfo returned 0
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc852508f20, 0-poo-images) returned 0x7fc8521aa5f0
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc8521aa5f0
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_storagepool_get_info: virStoragePoolGetInfo(0x7fc8521aa5f0, <info>) returned 0
+[2015-09-17 12:08:09 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc8521aa5f0 (conn (nil)) is allocated
+[2015-09-17 12:08:09 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc8521aa5f0) completed successfully
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc852508f20, 0-poo-images) returned 0x7fc85240e880
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc85240e880
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_storagepool_refresh: virStoragePoolRefresh(0x7fc85240e880, 0) returned 0
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolNumOfVolumes(0x7fc85240e880) returned 5
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolListVolumes(0x7fc85240e880,0x7fc8528a8e80,5) returned 5
+[2015-09-17 12:08:09 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc85240e880 (conn (nil)) is allocated
+[2015-09-17 12:08:09 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc85240e880) completed successfully
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_list_domains: Found 0 domains
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 0 domains
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 4 domains
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 4 domains
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00323-vm-01
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00323-vm-00
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00323-vm-03
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00323-vm-02
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh04/system established, returning 0x7fc8515428c0
+[2015-09-17 12:08:09 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc852508f20) completed successfully
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_connect_get_hypervisor: virConnectGetType returned QEMU
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh04.aceitlab.lan
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_node_get_info: virNodeGetInfo returned 0
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh04.aceitlab.lan
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc8515428c0, 0-poo-images) returned 0x7fc8521aa5f0
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc8521aa5f0
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_storagepool_get_info: virStoragePoolGetInfo(0x7fc8521aa5f0, <info>) returned 0
+[2015-09-17 12:08:09 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc8521aa5f0 (conn (nil)) is allocated
+[2015-09-17 12:08:09 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc8521aa5f0) completed successfully
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh04.aceitlab.lan
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc8515428c0, 0-poo-images) returned 0x7fc8515e7400
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc8515e7400
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_storagepool_refresh: virStoragePoolRefresh(0x7fc8515e7400, 0) returned 0
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolNumOfVolumes(0x7fc8515e7400) returned 4
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolListVolumes(0x7fc8515e7400,0x7fc8528be7a8,4) returned 4
+[2015-09-17 12:08:09 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc8515e7400 (conn (nil)) is allocated
+[2015-09-17 12:08:09 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc8515e7400) completed successfully
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh04.aceitlab.lan
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh04.aceitlab.lan
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_list_domains: Found 0 domains
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 0 domains
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 0 domains
+[2015-09-17 12:08:09 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 0 domains
+[2015-09-17 12:08:09 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc8515428c0) completed successfully
+[2015-09-17 12:08:20 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:08:20 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:08:20 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:08:20 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh02/system established, returning 0x7fc8522ae960
+[2015-09-17 12:08:20 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc85161ec20
+[2015-09-17 12:08:20 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85161ec20 (conn 0x7fc8522ae960) is allocated
+[2015-09-17 12:08:20 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85161ec20) completed successfully
+[2015-09-17 12:08:20 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:20 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc8522c9540
+[2015-09-17 12:08:20 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8522c9540 (conn 0x7fc8522ae960) is allocated
+[2015-09-17 12:08:20 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8522c9540) completed successfully
+[2015-09-17 12:08:20 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:20 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc852533900
+[2015-09-17 12:08:20 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852533900 (conn 0x7fc8522ae960) is allocated
+[2015-09-17 12:08:20 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852533900) completed successfully
+[2015-09-17 12:08:20 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:20 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc852578a50
+[2015-09-17 12:08:20 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852578a50 (conn 0x7fc8522ae960) is allocated
+[2015-09-17 12:08:20 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852578a50) completed successfully
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc851cd5640
+[2015-09-17 12:08:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851cd5640 (conn 0x7fc8522ae960) is allocated
+[2015-09-17 12:08:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851cd5640) completed successfully
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc851cd5d60
+[2015-09-17 12:08:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851cd5d60 (conn 0x7fc8522ae960) is allocated
+[2015-09-17 12:08:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851cd5d60) completed successfully
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc852563230
+[2015-09-17 12:08:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852563230 (conn 0x7fc8522ae960) is allocated
+[2015-09-17 12:08:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852563230) completed successfully
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc851cd5e80
+[2015-09-17 12:08:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851cd5e80 (conn 0x7fc8522ae960) is allocated
+[2015-09-17 12:08:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851cd5e80) completed successfully
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc85237e6e0
+[2015-09-17 12:08:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85237e6e0 (conn 0x7fc8522ae960) is allocated
+[2015-09-17 12:08:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85237e6e0) completed successfully
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc852563220
+[2015-09-17 12:08:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852563220 (conn 0x7fc8522ae960) is allocated
+[2015-09-17 12:08:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852563220) completed successfully
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc8522c9350
+[2015-09-17 12:08:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8522c9350 (conn 0x7fc8522ae960) is allocated
+[2015-09-17 12:08:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8522c9350) completed successfully
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc85237e750
+[2015-09-17 12:08:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85237e750 (conn 0x7fc8522ae960) is allocated
+[2015-09-17 12:08:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85237e750) completed successfully
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc8524398b0
+[2015-09-17 12:08:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8524398b0 (conn 0x7fc8522ae960) is allocated
+[2015-09-17 12:08:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8524398b0) completed successfully
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc852533ad0
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc852533ad0, 0) returned 0
+[2015-09-17 12:08:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852533ad0 (conn 0x7fc8522ae960) is allocated
+[2015-09-17 12:08:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852533ad0) completed successfully
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc8521a5870
+[2015-09-17 12:08:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8521a5870 (conn 0x7fc8522ae960) is allocated
+[2015-09-17 12:08:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8521a5870) completed successfully
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc8525339c0
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc8525339c0, 0) returned 0
+[2015-09-17 12:08:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8525339c0 (conn 0x7fc8522ae960) is allocated
+[2015-09-17 12:08:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8525339c0) completed successfully
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc852470a10
+[2015-09-17 12:08:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852470a10 (conn 0x7fc8522ae960) is allocated
+[2015-09-17 12:08:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852470a10) completed successfully
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc85237e840
+[2015-09-17 12:08:21 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc85237e840, 0) returned 0
+[2015-09-17 12:08:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85237e840 (conn 0x7fc8522ae960) is allocated
+[2015-09-17 12:08:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85237e840) completed successfully
+[2015-09-17 12:08:21 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc8522ae960) completed successfully
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh02/system established, returning 0x7fc85181dc50
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc8518cde80
+[2015-09-17 12:09:29 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8518cde80 (conn 0x7fc85181dc50) is allocated
+[2015-09-17 12:09:29 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8518cde80) completed successfully
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc8519bd190
+[2015-09-17 12:09:29 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8519bd190 (conn 0x7fc85181dc50) is allocated
+[2015-09-17 12:09:29 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8519bd190) completed successfully
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc8522c4b90
+[2015-09-17 12:09:29 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8522c4b90 (conn 0x7fc85181dc50) is allocated
+[2015-09-17 12:09:29 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8522c4b90) completed successfully
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc851b39630
+[2015-09-17 12:09:29 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851b39630 (conn 0x7fc85181dc50) is allocated
+[2015-09-17 12:09:29 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851b39630) completed successfully
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc8522c4f40
+[2015-09-17 12:09:29 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8522c4f40 (conn 0x7fc85181dc50) is allocated
+[2015-09-17 12:09:29 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8522c4f40) completed successfully
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc8522c4e00
+[2015-09-17 12:09:29 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8522c4e00 (conn 0x7fc85181dc50) is allocated
+[2015-09-17 12:09:29 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8522c4e00) completed successfully
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc85160e470
+[2015-09-17 12:09:29 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85160e470 (conn 0x7fc85181dc50) is allocated
+[2015-09-17 12:09:29 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85160e470) completed successfully
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc852285280
+[2015-09-17 12:09:29 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852285280 (conn 0x7fc85181dc50) is allocated
+[2015-09-17 12:09:29 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852285280) completed successfully
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc8522853c0
+[2015-09-17 12:09:29 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8522853c0 (conn 0x7fc85181dc50) is allocated
+[2015-09-17 12:09:29 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8522853c0) completed successfully
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc852284f40
+[2015-09-17 12:09:29 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852284f40 (conn 0x7fc85181dc50) is allocated
+[2015-09-17 12:09:29 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852284f40) completed successfully
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc8522852f0
+[2015-09-17 12:09:29 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8522852f0 (conn 0x7fc85181dc50) is allocated
+[2015-09-17 12:09:29 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8522852f0) completed successfully
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc851cb7610
+[2015-09-17 12:09:29 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851cb7610 (conn 0x7fc85181dc50) is allocated
+[2015-09-17 12:09:29 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851cb7610) completed successfully
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc851979e90
+[2015-09-17 12:09:29 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851979e90 (conn 0x7fc85181dc50) is allocated
+[2015-09-17 12:09:29 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851979e90) completed successfully
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc851979db0
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc851979db0, 0) returned 0
+[2015-09-17 12:09:29 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851979db0 (conn 0x7fc85181dc50) is allocated
+[2015-09-17 12:09:29 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851979db0) completed successfully
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc85197a480
+[2015-09-17 12:09:29 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85197a480 (conn 0x7fc85181dc50) is allocated
+[2015-09-17 12:09:29 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85197a480) completed successfully
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc851979f70
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc851979f70, 0) returned 0
+[2015-09-17 12:09:29 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851979f70 (conn 0x7fc85181dc50) is allocated
+[2015-09-17 12:09:29 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851979f70) completed successfully
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc8518d9740
+[2015-09-17 12:09:29 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8518d9740 (conn 0x7fc85181dc50) is allocated
+[2015-09-17 12:09:29 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8518d9740) completed successfully
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc85197a450
+[2015-09-17 12:09:29 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc85197a450, 0) returned 0
+[2015-09-17 12:09:29 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85197a450 (conn 0x7fc85181dc50) is allocated
+[2015-09-17 12:09:29 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85197a450) completed successfully
+[2015-09-17 12:09:29 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc85181dc50) completed successfully
+[2015-09-17 12:09:41 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:09:41 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:09:41 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:09:41 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh02/system established, returning 0x7fc852342470
+[2015-09-17 12:09:41 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc8523763a0
+[2015-09-17 12:09:41 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8523763a0 (conn 0x7fc852342470) is allocated
+[2015-09-17 12:09:41 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8523763a0) completed successfully
+[2015-09-17 12:09:41 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:41 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc852347150
+[2015-09-17 12:09:41 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852347150 (conn 0x7fc852342470) is allocated
+[2015-09-17 12:09:41 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852347150) completed successfully
+[2015-09-17 12:09:41 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:41 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc85238b410
+[2015-09-17 12:09:41 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85238b410 (conn 0x7fc852342470) is allocated
+[2015-09-17 12:09:41 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85238b410) completed successfully
+[2015-09-17 12:09:41 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:41 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc852365f00
+[2015-09-17 12:09:41 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852365f00 (conn 0x7fc852342470) is allocated
+[2015-09-17 12:09:41 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852365f00) completed successfully
+[2015-09-17 12:09:41 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:41 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc852365f00
+[2015-09-17 12:09:41 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852365f00 (conn 0x7fc852342470) is allocated
+[2015-09-17 12:09:41 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852365f00) completed successfully
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc8524988f0
+[2015-09-17 12:09:42 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8524988f0 (conn 0x7fc852342470) is allocated
+[2015-09-17 12:09:42 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8524988f0) completed successfully
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc852365f00
+[2015-09-17 12:09:42 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852365f00 (conn 0x7fc852342470) is allocated
+[2015-09-17 12:09:42 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852365f00) completed successfully
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc85238b410
+[2015-09-17 12:09:42 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85238b410 (conn 0x7fc852342470) is allocated
+[2015-09-17 12:09:42 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85238b410) completed successfully
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc852303e80
+[2015-09-17 12:09:42 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852303e80 (conn 0x7fc852342470) is allocated
+[2015-09-17 12:09:42 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852303e80) completed successfully
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc852347150
+[2015-09-17 12:09:42 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852347150 (conn 0x7fc852342470) is allocated
+[2015-09-17 12:09:42 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852347150) completed successfully
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc8524e15b0
+[2015-09-17 12:09:42 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8524e15b0 (conn 0x7fc852342470) is allocated
+[2015-09-17 12:09:42 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8524e15b0) completed successfully
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc85260f110
+[2015-09-17 12:09:42 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85260f110 (conn 0x7fc852342470) is allocated
+[2015-09-17 12:09:42 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85260f110) completed successfully
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc852303fa0
+[2015-09-17 12:09:42 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852303fa0 (conn 0x7fc852342470) is allocated
+[2015-09-17 12:09:42 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852303fa0) completed successfully
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc8524988f0
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc8524988f0, 0) returned 0
+[2015-09-17 12:09:42 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8524988f0 (conn 0x7fc852342470) is allocated
+[2015-09-17 12:09:42 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8524988f0) completed successfully
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc852304160
+[2015-09-17 12:09:42 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852304160 (conn 0x7fc852342470) is allocated
+[2015-09-17 12:09:42 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852304160) completed successfully
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc8524e15b0
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc8524e15b0, 0) returned 0
+[2015-09-17 12:09:42 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8524e15b0 (conn 0x7fc852342470) is allocated
+[2015-09-17 12:09:42 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8524e15b0) completed successfully
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc8524988f0
+[2015-09-17 12:09:42 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8524988f0 (conn 0x7fc852342470) is allocated
+[2015-09-17 12:09:42 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8524988f0) completed successfully
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc852490420
+[2015-09-17 12:09:42 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc852490420, 0) returned 0
+[2015-09-17 12:09:42 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852490420 (conn 0x7fc852342470) is allocated
+[2015-09-17 12:09:42 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852490420) completed successfully
+[2015-09-17 12:09:42 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc852342470) completed successfully
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@sh02/system established, returning 0x7fc85260aa90
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect_get_hypervisor: virConnectGetType returned QEMU
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_node_get_info: virNodeGetInfo returned 0
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc85260aa90, 0-poo-images) returned 0x7fc8522e0440
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc8522e0440
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_storagepool_get_info: virStoragePoolGetInfo(0x7fc8522e0440, <info>) returned 0
+[2015-09-17 12:10:02 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc8522e0440 (conn (nil)) is allocated
+[2015-09-17 12:10:02 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc8522e0440) completed successfully
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc85260aa90, 0-poo-images) returned 0x7fc85162e150
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc85162e150
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_storagepool_refresh: virStoragePoolRefresh(0x7fc85162e150, 0) returned 0
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolNumOfVolumes(0x7fc85162e150) returned 3
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolListVolumes(0x7fc85162e150,0x7fc8528af1e0,3) returned 3
+[2015-09-17 12:10:02 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc85162e150 (conn (nil)) is allocated
+[2015-09-17 12:10:02 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc85162e150) completed successfully
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_list_domains: Found 2 domains
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 2 domains
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_list_domains: Found running domain 0-dom-www02 with ID = 4
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_list_domains: Found running domain 0-dom-sql02 with ID = 3
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 1 domains
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 1 domains
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 0-dom-www03
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned sh02.aceitlab.lan
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh02/system established, returning 0x7fc8521b0f90
+[2015-09-17 12:10:02 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc85260aa90) completed successfully
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect_get_hypervisor: virConnectGetType returned QEMU
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_node_get_info: virNodeGetInfo returned 0
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc8521b0f90, 0-poo-images) returned 0x7fc8521a2b00
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc8521a2b00
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_storagepool_get_info: virStoragePoolGetInfo(0x7fc8521a2b00, <info>) returned 0
+[2015-09-17 12:10:02 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc8521a2b00 (conn (nil)) is allocated
+[2015-09-17 12:10:02 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc8521a2b00) completed successfully
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc8521b0f90, 0-poo-images) returned 0x7fc852614d20
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc852614d20
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_storagepool_refresh: virStoragePoolRefresh(0x7fc852614d20, 0) returned 0
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolNumOfVolumes(0x7fc852614d20) returned 6
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolListVolumes(0x7fc852614d20,0x7fc8528ec180,6) returned 6
+[2015-09-17 12:10:02 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc852614d20 (conn (nil)) is allocated
+[2015-09-17 12:10:02 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc852614d20) completed successfully
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_list_domains: Found 1 domains
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 1 domains
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_list_domains: Found running domain 00336-vm-00 with ID = 158
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00336-vm-03
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00336-vm-02
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00336-vm-01
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:10:02 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh03/system established, returning 0x7fc8521b1490
+[2015-09-17 12:10:03 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc8521b0f90) completed successfully
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_connect_get_hypervisor: virConnectGetType returned QEMU
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_node_get_info: virNodeGetInfo returned 0
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc8521b1490, 0-poo-images) returned 0x7fc8523aa810
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc8523aa810
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_storagepool_get_info: virStoragePoolGetInfo(0x7fc8523aa810, <info>) returned 0
+[2015-09-17 12:10:03 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc8523aa810 (conn (nil)) is allocated
+[2015-09-17 12:10:03 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc8523aa810) completed successfully
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc8521b1490, 0-poo-images) returned 0x7fc851885000
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc851885000
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_storagepool_refresh: virStoragePoolRefresh(0x7fc851885000, 0) returned 0
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolNumOfVolumes(0x7fc851885000) returned 5
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolListVolumes(0x7fc851885000,0x7fc852898e70,5) returned 5
+[2015-09-17 12:10:03 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc851885000 (conn (nil)) is allocated
+[2015-09-17 12:10:03 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc851885000) completed successfully
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_list_domains: Found 0 domains
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 0 domains
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 4 domains
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 4 domains
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00323-vm-01
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00323-vm-00
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00323-vm-03
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00323-vm-02
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh03.aceitlab.lan
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh04/system established, returning 0x7fc852491900
+[2015-09-17 12:10:03 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc8521b1490) completed successfully
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_connect_get_hypervisor: virConnectGetType returned QEMU
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh04.aceitlab.lan
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_node_get_info: virNodeGetInfo returned 0
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh04.aceitlab.lan
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc852491900, 0-poo-images) returned 0x7fc85233d5b0
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc85233d5b0
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_storagepool_get_info: virStoragePoolGetInfo(0x7fc85233d5b0, <info>) returned 0
+[2015-09-17 12:10:03 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc85233d5b0 (conn (nil)) is allocated
+[2015-09-17 12:10:03 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc85233d5b0) completed successfully
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh04.aceitlab.lan
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc852491900, 0-poo-images) returned 0x7fc8526098a0
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc8526098a0
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_storagepool_refresh: virStoragePoolRefresh(0x7fc8526098a0, 0) returned 0
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolNumOfVolumes(0x7fc8526098a0) returned 4
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_storagepool_list_volumes: virStoragePoolListVolumes(0x7fc8526098a0,0x7fc8528ae798,4) returned 4
+[2015-09-17 12:10:03 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc8526098a0 (conn (nil)) is allocated
+[2015-09-17 12:10:03 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc8526098a0) completed successfully
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh04.aceitlab.lan
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh04.aceitlab.lan
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_list_domains: Found 0 domains
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 0 domains
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 0 domains
+[2015-09-17 12:10:03 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 0 domains
+[2015-09-17 12:10:03 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc852491900) completed successfully
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh02/system established, returning 0x7fc8521cefd0
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domains: Found 1 domains
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 1 domains
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domains: Found running domain 00336-vm-00 with ID = 158
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00336-vm-03
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00336-vm-02
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00336-vm-01
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc852279f90
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_domain_destroy: virDomainDestroy(0x7fc852279f90) returned 0
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc85227a360
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc85227a360 (xPath = (null))
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_network_get: returning 0x7fc8523475e0
+[2015-09-17 12:12:48 libvirt-php/core   ]: check_resource_allocation: libvirt network resource 0x7fc8523475e0 (conn 0x7fc8521cefd0) is allocated
+[2015-09-17 12:12:48 libvirt-php/core   ]: php_libvirt_network_dtor: virNetworkFree(0x7fc8523475e0) completed successfully
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_network_get: returning 0x7fc85225f070
+[2015-09-17 12:12:48 libvirt-php/core   ]: check_resource_allocation: libvirt network resource 0x7fc85225f070 (conn 0x7fc8521cefd0) is allocated
+[2015-09-17 12:12:48 libvirt-php/core   ]: php_libvirt_network_dtor: virNetworkFree(0x7fc85225f070) completed successfully
+[2015-09-17 12:12:48 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85227a360 (conn 0x7fc8521cefd0) is allocated
+[2015-09-17 12:12:48 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85227a360) completed successfully
+[2015-09-17 12:12:48 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852279f90 (conn 0x7fc8521cefd0) is allocated
+[2015-09-17 12:12:48 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852279f90) completed successfully
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc852342880
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc852342590
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc852342590, 0) returned 0
+[2015-09-17 12:12:48 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852342590 (conn 0x7fc8521cefd0) is allocated
+[2015-09-17 12:12:48 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852342590) completed successfully
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_domain_undefine: virDomainUndefine(0x7fc852342880) returned 0
+[2015-09-17 12:12:48 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852342880 (conn 0x7fc8521cefd0) is allocated
+[2015-09-17 12:12:48 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852342880) completed successfully
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domains: Found 0 domains
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 0 domains
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00336-vm-03
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00336-vm-02
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00336-vm-01
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc8523bc290
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_domain_destroy: virDomainDestroy(0x7fc8523bc290) returned -1
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc852614b60
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc852614b60 (xPath = (null))
+[2015-09-17 12:12:48 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852614b60 (conn 0x7fc8521cefd0) is allocated
+[2015-09-17 12:12:48 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852614b60) completed successfully
+[2015-09-17 12:12:48 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8523bc290 (conn 0x7fc8521cefd0) is allocated
+[2015-09-17 12:12:48 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8523bc290) completed successfully
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domains: Found 0 domains
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 0 domains
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00336-vm-03
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00336-vm-02
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00336-vm-01
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc851546ed0
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_domain_destroy: virDomainDestroy(0x7fc851546ed0) returned -1
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc852347690
+[2015-09-17 12:12:48 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc852347690 (xPath = (null))
+[2015-09-17 12:12:48 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852347690 (conn 0x7fc8521cefd0) is allocated
+[2015-09-17 12:12:48 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852347690) completed successfully
+[2015-09-17 12:12:48 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851546ed0 (conn 0x7fc8521cefd0) is allocated
+[2015-09-17 12:12:48 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851546ed0) completed successfully
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_list_domains: Found 0 domains
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 0 domains
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00336-vm-03
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00336-vm-02
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain 00336-vm-01
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc8526149c0
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_domain_destroy: virDomainDestroy(0x7fc8526149c0) returned -1
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc852418230
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc852418230 (xPath = (null))
+[2015-09-17 12:12:49 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852418230 (conn 0x7fc8521cefd0) is allocated
+[2015-09-17 12:12:49 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852418230) completed successfully
+[2015-09-17 12:12:49 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8526149c0 (conn 0x7fc8521cefd0) is allocated
+[2015-09-17 12:12:49 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8526149c0) completed successfully
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc8521cefd0, 0-poo-images) returned 0x7fc85260ebd0
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc85260ebd0
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_storagevolume_lookup_by_name: virStorageVolLookupByName(0x7fc85260ebd0, 00336-vol-00) returned 0x7fc8523f7c80
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_storagevolume_lookup_by_name: returning 0x7fc8523f7c80
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_storagevolume_delete: virStorageVolDelete(0x7fc8523f7c80, 0) returned 0
+[2015-09-17 12:12:49 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc85260ebd0 (conn (nil)) is allocated
+[2015-09-17 12:12:49 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc85260ebd0) completed successfully
+[2015-09-17 12:12:49 libvirt-php/core   ]: check_resource_allocation: libvirt storage volume resource 0x7fc8523f7c80 (conn (nil)) is allocated
+[2015-09-17 12:12:49 libvirt-php/core   ]: php_libvirt_volume_dtor: virStorageVolFree(0x7fc8523f7c80) completed successfully
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc8521cefd0, 0-poo-images) returned 0x7fc85260ebd0
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc85260ebd0
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_storagevolume_lookup_by_name: virStorageVolLookupByName(0x7fc85260ebd0, 00336-vol-01) returned 0x7fc852347850
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_storagevolume_lookup_by_name: returning 0x7fc852347850
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_storagevolume_delete: virStorageVolDelete(0x7fc852347850, 0) returned 0
+[2015-09-17 12:12:49 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc85260ebd0 (conn (nil)) is allocated
+[2015-09-17 12:12:49 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc85260ebd0) completed successfully
+[2015-09-17 12:12:49 libvirt-php/core   ]: check_resource_allocation: libvirt storage volume resource 0x7fc852347850 (conn (nil)) is allocated
+[2015-09-17 12:12:49 libvirt-php/core   ]: php_libvirt_volume_dtor: virStorageVolFree(0x7fc852347850) completed successfully
+[2015-09-17 12:12:49 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:12:51 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:12:51 libvirt-php/core   ]: libvirt_network_get: returning 0x7fc8523c8500
+[2015-09-17 12:12:51 libvirt-php/core   ]: check_resource_allocation: libvirt network resource 0x7fc8523c8500 (conn 0x7fc8521cefd0) is allocated
+[2015-09-17 12:12:51 libvirt-php/core   ]: php_libvirt_network_dtor: virNetworkFree(0x7fc8523c8500) completed successfully
+[2015-09-17 12:12:51 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc8521cefd0) completed successfully
+[2015-09-17 12:13:16 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:13:16 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:13:16 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:13:16 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh02/system established, returning 0x7fc852394ae0
+[2015-09-17 12:13:16 libvirt-php/core   ]: libvirt_network_define_xml: returning 0x7fc8525651f0
+[2015-09-17 12:13:19 libvirt-php/core   ]: check_resource_allocation: libvirt network resource 0x7fc8525651f0 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:19 libvirt-php/core   ]: php_libvirt_network_dtor: virNetworkFree(0x7fc8525651f0) completed successfully
+[2015-09-17 12:13:19 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:19 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:19 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc852394ae0, 0-poo-images) returned 0x7fc852359100
+[2015-09-17 12:13:19 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc852359100
+[2015-09-17 12:13:19 libvirt-php/core   ]: libvirt_storagevolume_create_xml: virStorageVolCreateXML(0x7fc852359100, <xml>, 0) returned 0x7fc8523c88f0
+[2015-09-17 12:13:19 libvirt-php/core   ]: libvirt_storagevolume_create_xml: returning 0x7fc8523c88f0
+[2015-09-17 12:13:19 libvirt-php/core   ]: check_resource_allocation: libvirt storage volume resource 0x7fc8523c88f0 (conn (nil)) is allocated
+[2015-09-17 12:13:19 libvirt-php/core   ]: php_libvirt_volume_dtor: virStorageVolFree(0x7fc8523c88f0) completed successfully
+[2015-09-17 12:13:19 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc852359100 (conn (nil)) is allocated
+[2015-09-17 12:13:19 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc852359100) completed successfully
+[2015-09-17 12:13:19 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:19 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: virStoragePoolLookupByName(0x7fc852394ae0, 0-poo-images) returned 0x7fc851622d30
+[2015-09-17 12:13:19 libvirt-php/core   ]: libvirt_storagepool_lookup_by_name: returning 0x7fc851622d30
+[2015-09-17 12:13:19 libvirt-php/core   ]: libvirt_storagevolume_create_xml: virStorageVolCreateXML(0x7fc851622d30, <xml>, 0) returned 0x7fc851676630
+[2015-09-17 12:13:19 libvirt-php/core   ]: libvirt_storagevolume_create_xml: returning 0x7fc851676630
+[2015-09-17 12:13:19 libvirt-php/core   ]: check_resource_allocation: libvirt storage volume resource 0x7fc851676630 (conn (nil)) is allocated
+[2015-09-17 12:13:19 libvirt-php/core   ]: php_libvirt_volume_dtor: virStorageVolFree(0x7fc851676630) completed successfully
+[2015-09-17 12:13:19 libvirt-php/core   ]: check_resource_allocation: libvirt storage pool resource 0x7fc851622d30 (conn (nil)) is allocated
+[2015-09-17 12:13:19 libvirt-php/core   ]: php_libvirt_storagepool_dtor: virStoragePoolFree(0x7fc851622d30) completed successfully
+[2015-09-17 12:13:19 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:19 libvirt-php/core   ]: libvirt_domain_define_xml: returning 0x7fc8521b5280
+[2015-09-17 12:13:19 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8521b5280 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:19 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8521b5280) completed successfully
+[2015-09-17 12:13:19 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:19 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc8521b5310
+[2015-09-17 12:13:19 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc8521b5350
+[2015-09-17 12:13:19 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc8521b5350 (xPath = (null))
+[2015-09-17 12:13:19 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8521b5350 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:19 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8521b5350) completed successfully
+[2015-09-17 12:13:19 libvirt-php/core   ]: libvirt_domain_undefine: virDomainUndefine(0x7fc8521b5310) returned 0
+[2015-09-17 12:13:19 libvirt-php/core   ]: libvirt_domain_define_xml: returning 0x7fc85261bc80
+[2015-09-17 12:13:19 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8521b5310 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:19 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8521b5310) completed successfully
+[2015-09-17 12:13:19 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85261bc80 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:19 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85261bc80) completed successfully
+[2015-09-17 12:13:19 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:20 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc8521ce2b0
+[2015-09-17 12:13:20 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc8521ce2b0 (xPath = (null))
+[2015-09-17 12:13:20 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8521ce2b0 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:20 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8521ce2b0) completed successfully
+[2015-09-17 12:13:20 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc852464980
+[2015-09-17 12:13:20 libvirt-php/core   ]: libvirt_domain_update_device: virDomainUpdateDeviceFlags(0x7fc852464980) returned 0
+[2015-09-17 12:13:20 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852464980 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:20 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852464980) completed successfully
+[2015-09-17 12:13:20 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:20 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc8522e4440
+[2015-09-17 12:13:20 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc85261b9c0
+[2015-09-17 12:13:20 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc85261b9c0 (xPath = (null))
+[2015-09-17 12:13:20 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85261b9c0 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:20 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85261b9c0) completed successfully
+[2015-09-17 12:13:20 libvirt-php/core   ]: libvirt_network_get: returning 0x7fc8523dc6c0
+[2015-09-17 12:13:20 libvirt-php/core   ]: libvirt_network_get: returning 0x7fc8523dc510
+[2015-09-17 12:13:20 libvirt-php/core   ]: libvirt_domain_update_device: virDomainUpdateDeviceFlags(0x7fc8522e4440) returned 0
+[2015-09-17 12:13:20 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8522e4440 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:20 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8522e4440) completed successfully
+[2015-09-17 12:13:20 libvirt-php/core   ]: check_resource_allocation: libvirt network resource 0x7fc8523dc6c0 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:20 libvirt-php/core   ]: php_libvirt_network_dtor: virNetworkFree(0x7fc8523dc6c0) completed successfully
+[2015-09-17 12:13:20 libvirt-php/core   ]: check_resource_allocation: libvirt network resource 0x7fc8523dc510 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:20 libvirt-php/core   ]: php_libvirt_network_dtor: virNetworkFree(0x7fc8523dc510) completed successfully
+[2015-09-17 12:13:20 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc8516c4040
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc8516c4040 (xPath = (null))
+[2015-09-17 12:13:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8516c4040 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8516c4040) completed successfully
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc852276a90
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_domain_update_device: virDomainUpdateDeviceFlags(0x7fc852276a90) returned 0
+[2015-09-17 12:13:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852276a90 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852276a90) completed successfully
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc8521b5500
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc852504db0
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc852504db0 (xPath = (null))
+[2015-09-17 12:13:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852504db0 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852504db0) completed successfully
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_network_get: returning 0x7fc85258da30
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_network_get: returning 0x7fc85258da70
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_domain_update_device: virDomainUpdateDeviceFlags(0x7fc8521b5500) returned 0
+[2015-09-17 12:13:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8521b5500 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8521b5500) completed successfully
+[2015-09-17 12:13:21 libvirt-php/core   ]: check_resource_allocation: libvirt network resource 0x7fc85258da30 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:21 libvirt-php/core   ]: php_libvirt_network_dtor: virNetworkFree(0x7fc85258da30) completed successfully
+[2015-09-17 12:13:21 libvirt-php/core   ]: check_resource_allocation: libvirt network resource 0x7fc85258da70 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:21 libvirt-php/core   ]: php_libvirt_network_dtor: virNetworkFree(0x7fc85258da70) completed successfully
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc852276c20
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_domain_create: virDomainCreate(0x7fc852276c20) returned 0
+[2015-09-17 12:13:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852276c20 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852276c20) completed successfully
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc8518891a0
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc8518891e0
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc8518891e0 (xPath = (null))
+[2015-09-17 12:13:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8518891e0 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8518891e0) completed successfully
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_domain_undefine: virDomainUndefine(0x7fc8518891a0) returned 0
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_domain_define_xml: returning 0x7fc85153f1c0
+[2015-09-17 12:13:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85153f1c0 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85153f1c0) completed successfully
+[2015-09-17 12:13:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8518891a0 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8518891a0) completed successfully
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc8516205a0
+[2015-09-17 12:13:22 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc851628140
+[2015-09-17 12:13:22 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x7fc851628140 (xPath = (null))
+[2015-09-17 12:13:22 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851628140 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:22 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851628140) completed successfully
+[2015-09-17 12:13:22 libvirt-php/core   ]: libvirt_domain_undefine: virDomainUndefine(0x7fc8516205a0) returned 0
+[2015-09-17 12:13:22 libvirt-php/core   ]: libvirt_domain_define_xml: returning 0x7fc8522c3de0
+[2015-09-17 12:13:22 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8516205a0 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:22 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8516205a0) completed successfully
+[2015-09-17 12:13:22 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8522c3de0 (conn 0x7fc852394ae0) is allocated
+[2015-09-17 12:13:22 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8522c3de0) completed successfully
+[2015-09-17 12:13:22 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc852394ae0) completed successfully
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_connect: credentials index 0
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_connect: credentials index 1
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_connect: Found 2 elements for credentials
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_connect: Connection to qemu+ssh://root@vh02/system established, returning 0x7fc8515f6a00
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc8521bc790
+[2015-09-17 12:13:38 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8521bc790 (conn 0x7fc8515f6a00) is allocated
+[2015-09-17 12:13:38 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8521bc790) completed successfully
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc8522c92d0
+[2015-09-17 12:13:38 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8522c92d0 (conn 0x7fc8515f6a00) is allocated
+[2015-09-17 12:13:38 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8522c92d0) completed successfully
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc851cbd100
+[2015-09-17 12:13:38 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851cbd100 (conn 0x7fc8515f6a00) is allocated
+[2015-09-17 12:13:38 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851cbd100) completed successfully
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc8522c9290
+[2015-09-17 12:13:38 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8522c9290 (conn 0x7fc8515f6a00) is allocated
+[2015-09-17 12:13:38 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8522c9290) completed successfully
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc852578a90
+[2015-09-17 12:13:38 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852578a90 (conn 0x7fc8515f6a00) is allocated
+[2015-09-17 12:13:38 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852578a90) completed successfully
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-00', returning 0x7fc85236ec90
+[2015-09-17 12:13:38 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85236ec90 (conn 0x7fc8515f6a00) is allocated
+[2015-09-17 12:13:38 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85236ec90) completed successfully
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc852578ab0
+[2015-09-17 12:13:38 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852578ab0 (conn 0x7fc8515f6a00) is allocated
+[2015-09-17 12:13:38 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852578ab0) completed successfully
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc852566ad0
+[2015-09-17 12:13:38 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852566ad0 (conn 0x7fc8515f6a00) is allocated
+[2015-09-17 12:13:38 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852566ad0) completed successfully
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc85243eb10
+[2015-09-17 12:13:38 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85243eb10 (conn 0x7fc8515f6a00) is allocated
+[2015-09-17 12:13:38 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85243eb10) completed successfully
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc85236ebb0
+[2015-09-17 12:13:38 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85236ebb0 (conn 0x7fc8515f6a00) is allocated
+[2015-09-17 12:13:38 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85236ebb0) completed successfully
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc8522eaa00
+[2015-09-17 12:13:38 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8522eaa00 (conn 0x7fc8515f6a00) is allocated
+[2015-09-17 12:13:38 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8522eaa00) completed successfully
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc852470a90
+[2015-09-17 12:13:38 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852470a90 (conn 0x7fc8515f6a00) is allocated
+[2015-09-17 12:13:38 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852470a90) completed successfully
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc8522eab50
+[2015-09-17 12:13:38 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc8522eab50 (conn 0x7fc8515f6a00) is allocated
+[2015-09-17 12:13:38 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc8522eab50) completed successfully
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-01', returning 0x7fc852228940
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc852228940, 0) returned 0
+[2015-09-17 12:13:38 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852228940 (conn 0x7fc8515f6a00) is allocated
+[2015-09-17 12:13:38 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852228940) completed successfully
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc851cd5640
+[2015-09-17 12:13:38 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc851cd5640 (conn 0x7fc8515f6a00) is allocated
+[2015-09-17 12:13:38 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc851cd5640) completed successfully
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-02', returning 0x7fc85153f860
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc85153f860, 0) returned 0
+[2015-09-17 12:13:38 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc85153f860 (conn 0x7fc8515f6a00) is allocated
+[2015-09-17 12:13:38 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc85153f860) completed successfully
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc852470a30
+[2015-09-17 12:13:38 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852470a30 (conn 0x7fc8515f6a00) is allocated
+[2015-09-17 12:13:38 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852470a30) completed successfully
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_connect_get_hostname: virConnectGetHostname returned vh02.aceitlab.lan
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = '00336-vm-03', returning 0x7fc852470950
+[2015-09-17 12:13:38 libvirt-php/core   ]: libvirt_list_domain_snapshots: virDomainSnapshotNum(0x7fc852470950, 0) returned 0
+[2015-09-17 12:13:38 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x7fc852470950 (conn 0x7fc8515f6a00) is allocated
+[2015-09-17 12:13:38 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x7fc852470950) completed successfully
+[2015-09-17 12:13:38 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x7fc8515f6a00) completed successfully
+error: Failed to start network 00336-net-00
+error: Requested operation is not valid: network is already active
