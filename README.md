@@ -7,4 +7,4 @@ ACEITLab provides tenants (read Students) with the ability to create, configure,
 
 Access to those VMs is integrated into the browser via the excellent Guacamole project (http://guac-dev.org/)
 
-Though currently focused on KVM and the libvirt-php API, this project can be expanded to other hypervisors through its abstraction model and the addition of further libraries
+Though currently focused on KVM and the libvirt-php API (https://libvirt.org/php/), this project can be expanded to other hypervisors through its abstraction model and the addition of further libraries
