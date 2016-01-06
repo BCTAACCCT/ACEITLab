@@ -613,10 +613,11 @@ $load_student_lab_button_disabled = ($select_student_lab_count == 0) ? 'disabled
 <!-- HTML PAGE - headers and menu -->
 <!doctype html>
 <html>
-<head>
+<head profile="http://www.w3.org/2005/10/profile">
     <title>ACEITLab - Lab</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" type="text/css" href="css/rudi.css"/>
+    <link rel="icon" type="image/png" href="icon/favicon-32x32.png"/>
 </head>
 <body class="<?php echo $body_class; ?>">
 <!-- BEGIN PAGE -->

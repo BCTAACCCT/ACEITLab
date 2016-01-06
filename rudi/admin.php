@@ -3077,95 +3077,96 @@ $page_links = ace_session_get_page_links();
 ?>
 <!doctype html>
 <html>
-    <head>
-        <title>ACEITLab - Admin</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <link rel="stylesheet" type="text/css" href="css/rudi.css" />
-    </head>
-    <body>
-        <div id="section_header" class="section">
-            <div class="header_left">
-                <div class="element_table">
-                    <div class="element_column">
-                        <div id="site_title" class="element">
-                            <p>ACEITLab</p>
-                        </div>
+<head profile="http://www.w3.org/2005/10/profile">
+    <title>ACEITLab - Admin</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="css/rudi.css" />
+    <link rel="icon" type="image/png" href="icon/favicon-32x32.png"/>
+</head>
+<body>
+    <div id="section_header" class="section">
+        <div class="header_left">
+            <div class="element_table">
+                <div class="element_column">
+                    <div id="site_title" class="element">
+                        <p>ACEITLab</p>
                     </div>
                 </div>
             </div>
-            <div class="header_left">
-                <div class="element_table">
-                    <div class="element_column">
-                        <?php echo $page_links; ?>
-                    </div>
-                </div>
-            </div>
-            <div class="header_right">
-                <div class="element_table">
-                    <div class="element_column">
-                        <div class="row_element_right">
-                            <form action="<?php echo _LOGIN_URL_; ?>" method="post">
-                                <input name="nonce" value=' . $nonce . ' type="hidden"/>
-                                <button name="action" value="logout" type="submit">Logout</button>
-                            </form>
-                        </div>
-                        <div class="row_element_right">
-                            <form action="<?php echo _USER_URL_; ?>" method="post">
-                                <input name="nonce" value=' . $nonce . ' type="hidden"/>
-                                <button name="action" value="edit_profile"
-                                        type="submit"><?php echo $user_display_name; ?></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="clear"></div>
         </div>
-        <!--<div class="horizontal_divider"></div>-->
-        <div id="menu_bar" class="menu_bar">
-            <form class="bar_form" action="<?php echo _ADMIN_URL_ ?>" method="post">
-                <input name="nonce" value='<?php echo $nonce; ?>' type="hidden"/>
+        <div class="header_left">
+            <div class="element_table">
+                <div class="element_column">
+                    <?php echo $page_links; ?>
+                </div>
+            </div>
+        </div>
+        <div class="header_right">
+            <div class="element_table">
+                <div class="element_column">
+                    <div class="row_element_right">
+                        <form action="<?php echo _LOGIN_URL_; ?>" method="post">
+                            <input name="nonce" value=' . $nonce . ' type="hidden"/>
+                            <button name="action" value="logout" type="submit">Logout</button>
+                        </form>
+                    </div>
+                    <div class="row_element_right">
+                        <form action="<?php echo _USER_URL_; ?>" method="post">
+                            <input name="nonce" value=' . $nonce . ' type="hidden"/>
+                            <button name="action" value="edit_profile"
+                                    type="submit"><?php echo $user_display_name; ?></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--<div class="horizontal_divider"></div>-->
+    <div id="menu_bar" class="menu_bar">
+        <form class="bar_form" action="<?php echo _ADMIN_URL_ ?>" method="post">
+            <input name="nonce" value='<?php echo $nonce; ?>' type="hidden"/>
 
-                <div class="element_table">
-                    <div class="element_column">
-                        <div class="row_element">
-                            <button name="display" value="hosts" type="submit" class="<?php echo ($_POST['display'] == 'hosts') ? 'selected' : ''; ?>">Hosts</button>
-                            <button name="display" value="resources" type="submit" class="<?php echo ($_POST['display'] == 'resources') ? 'selected' : ''; ?>">Resources</button>
-                        </div>
-                        <div class="row_element">
-                            <button name="display" value="groups" type="submit" class="<?php echo ($_POST['display'] == 'groups') ? 'selected' : ''; ?>">Security Groups</button>
-                            <button name="display" value="courses" type="submit" class="<?php echo ($_POST['display'] == 'courses') ? 'selected' : ''; ?>">Defined Courses</button>
-                            <button name="display" value="sections" type="submit" class="<?php echo ($_POST['display'] == 'sections') ? 'selected' : ''; ?>">Current Classes</button>
-                            <button name="display" value="users" type="submit" class="<?php echo ($_POST['display'] == 'users') ? 'selected' : ''; ?>">All Users</button>
-                        </div>
-                        <div class="row_element">
-                            <button name="display" value="quotas" type="submit" class="<?php echo ($_POST['display'] == 'quotas') ? 'selected' : ''; ?>">Quotas</button>
-                            <button name="display" value="labs" type="submit" class="<?php echo ($_POST['display'] == 'labs') ? 'selected' : ''; ?>">Labs</button>
-                        </div>
+            <div class="element_table">
+                <div class="element_column">
+                    <div class="row_element">
+                        <button name="display" value="hosts" type="submit" class="<?php echo ($_POST['display'] == 'hosts') ? 'selected' : ''; ?>">Hosts</button>
+                        <button name="display" value="resources" type="submit" class="<?php echo ($_POST['display'] == 'resources') ? 'selected' : ''; ?>">Resources</button>
+                    </div>
+                    <div class="row_element">
+                        <button name="display" value="groups" type="submit" class="<?php echo ($_POST['display'] == 'groups') ? 'selected' : ''; ?>">Security Groups</button>
+                        <button name="display" value="courses" type="submit" class="<?php echo ($_POST['display'] == 'courses') ? 'selected' : ''; ?>">Defined Courses</button>
+                        <button name="display" value="sections" type="submit" class="<?php echo ($_POST['display'] == 'sections') ? 'selected' : ''; ?>">Current Classes</button>
+                        <button name="display" value="users" type="submit" class="<?php echo ($_POST['display'] == 'users') ? 'selected' : ''; ?>">All Users</button>
+                    </div>
+                    <div class="row_element">
+                        <button name="display" value="quotas" type="submit" class="<?php echo ($_POST['display'] == 'quotas') ? 'selected' : ''; ?>">Quotas</button>
+                        <button name="display" value="labs" type="submit" class="<?php echo ($_POST['display'] == 'labs') ? 'selected' : ''; ?>">Labs</button>
                     </div>
                 </div>
-            </form>
-            <div class="clear"></div>
-        </div>
-        <!--<div class="horizontal_divider"></div>-->
-        <div id="section_main" class="section">
+            </div>
+        </form>
+        <div class="clear"></div>
+    </div>
+    <!--<div class="horizontal_divider"></div>-->
+    <div id="section_main" class="section">
 <?php
 echo $html;
 foreach ($element_table as $element_column) {
+echo '
+        <div class="element_column">';
+foreach ($element_column as $element) {
     echo '
-            <div class="element_column">';
-    foreach ($element_column as $element) {
-        echo '
-                <div class="element">' . $element . '</div>';
-    }
-    echo '
-            </div>';
-    }
+            <div class="element">' . $element . '</div>';
+}
+echo '
+        </div>';
+}
 ?>
-            <div class="clear"></div>
-        </div>
-        <div id="status_section" class="section">
-            <div class="message_bar"><?php echo (isset($messages)) ? ace_out_messages($messages) : ''; ?></div>
-        </div>
-    </body>
+        <div class="clear"></div>
+    </div>
+    <div id="status_section" class="section">
+        <div class="message_bar"><?php echo (isset($messages)) ? ace_out_messages($messages) : ''; ?></div>
+    </div>
+</body>
 </html>

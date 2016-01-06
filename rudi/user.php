@@ -121,10 +121,11 @@ $page_links = ace_session_get_page_links();
 ?>
 <!doctype html>
 <html>
-	<head>
+	<head profile="http://www.w3.org/2005/10/profile">
 		<title>ACEITLab - User</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="css/rudi.css" />
+        <link rel="icon" type="image/png" href="icon/favicon-32x32.png"/>
 	</head>
 	<body>
 		<div id="section_header" class="section">
