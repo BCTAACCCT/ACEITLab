@@ -614,7 +614,7 @@ $load_student_lab_button_disabled = ($select_student_lab_count == 0) ? 'disabled
 <!doctype html>
 <html>
 <head>
-    <title>ACEITLab</title>
+    <title>ACEITLab - Lab</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" type="text/css" href="css/rudi.css"/>
 </head>

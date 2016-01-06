@@ -5,6 +5,7 @@
 ?>
 <html>
 <head>
+    <title>ACEITLab - Landing</title>
 </head>
 <body>
 </body>

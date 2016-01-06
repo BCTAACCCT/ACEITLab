@@ -122,7 +122,7 @@ $page_links = ace_session_get_page_links();
 <!doctype html>
 <html>
 	<head>
-		<title>ACEITLab</title>
+		<title>ACEITLab - User</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="css/rudi.css" />
 	</head>

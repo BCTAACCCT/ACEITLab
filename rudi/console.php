@@ -216,7 +216,7 @@ if (isset($_POST['vm_id']) && $_POST['vm_id'] != NULL) {
 <!doctype html>
 <html>
 <head>
-    <title>ACEITLab</title>
+    <title>ACEITLab - Console</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" type="text/css" href="css/rudi.css"/>
     <script type="text/javascript">

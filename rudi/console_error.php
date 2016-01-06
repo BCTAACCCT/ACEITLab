@@ -15,7 +15,7 @@
 ?>
 <html>
 	<head>
-		<title>Console</title>
+		<title>ACEITLab - Console Error</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="css/rudi.css" />
 		<style>
