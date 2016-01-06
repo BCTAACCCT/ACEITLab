@@ -62,9 +62,11 @@ if (isset($_POST['username'])) {
 							<table class='login'>
 								<tr>
 									<td align="right">Username:</td>
-									<td align="left"><label>
+									<td align="left">
+                                        <label>
                                             <input name="username" type="text" tabindex="1"/>
-                                        </label></td>
+                                        </label>
+                                    </td>
 								</tr>
 								<tr>
 									<td align="right">Password:</td>
